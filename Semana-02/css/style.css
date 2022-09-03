@@ -1,14 +1,17 @@
+/* PARA TODO EL HTML */
+
 *   {
     font-family: 'Roboto', sans-serif;
 }
 
 h1  {
     font: size 40px; 
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h2  {
-
+    font-size: 30px;
+    font-weight: bold;
 }
 
 h3  {
