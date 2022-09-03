@@ -1,7 +1,25 @@
 /* PARA TODO EL HTML */
 
-*   {
+body {
     font-family: 'Roboto', sans-serif;
+}
+header  {
+    width: 1288px;
+    height: 982px;
+    background-image: url(../assets/imagen-header.png);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+
+}
+.header-text    {
+    width: 366px;
+    padding-top: 170px;
+    padding-left: 100px; 
+    line-height: 30px;
+    background-color: 481px black;
+    
+    
 }
 
 h1  {
@@ -10,34 +28,37 @@ h1  {
 }
 
 h2  {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 h3  {
     font-size: 30px;
 }
-.We-are p   {
-    font-size: 20px;
-    line-height: 30px;
-}
+
 .box-1  {
     color: #373867;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
 }
+
 .box-2  {
     color: #49a37b;
+    font-size: 18px;
+    font-weight: lighter;
 }
 .section-choose h2  {
 font: size 30px;    
 }
-.section-choose {
+.section-choose {    
     font-size: 30px;
 }
-.elegirnos-1y3  {
+.choose-us-1y3  {
 
 }
 
-.elegirnos-2y4  {
+.choose-us-2y4  {
     background-color: #d9d9d9;
 }
 
