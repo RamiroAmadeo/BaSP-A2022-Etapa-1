@@ -8,18 +8,30 @@ header  {
     height: 982px;
     background-image: url(../assets/imagen-header.png);
     background-repeat: no-repeat;
-    color: white;
-    text-align: left;
-
 }
+.header-background  {
+    background: rgba(0, 0, 0, 0.6);
+    width: 481px;
+    height: 981px;
+    margin-left: 76px;
+   
+}
+.header-title   {
+    border-bottom: 2px solid #aace9b;
+    width: 452px;
+}
+
 .header-text    {
     width: 366px;
     padding-top: 170px;
-    padding-left: 100px; 
+    padding-left: 22px; 
     line-height: 30px;
-    background-color: 481px black;
+    color: white;
+    text-align: left;
     
-    
+}
+.header-text-1  {
+    padding-top: 30px;
 }
 
 h1  {
