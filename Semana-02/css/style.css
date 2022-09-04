@@ -2,10 +2,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: 6864px;
+    width: 1440px;
+    
 }
 header  {
     width: 1288px;
     height: 982px;
+    margin-left: 152px;
     background-image: url(../assets/imagen-header.png);
     background-repeat: no-repeat;
 }
@@ -33,6 +37,28 @@ header  {
 .header-text-1  {
     padding-top: 30px;
 }
+aside {
+width: 152px;
+height: 982px;
+position:sticky;
+top: 0;
+}
+.contact-us {
+    padding-top: 300px;
+}
+
+.contact-us-text    {
+    padding-left: 30px;
+    margin-top: ;
+    font-size: 10px;
+    width: 120px;
+    color: #f13312;
+    text-align: left;
+}
+.contact-us-icons   {
+  
+
+}
 
 h1  {
     font: size 40px; 
@@ -47,18 +73,30 @@ h2  {
 h3  {
     font-size: 30px;
 }
+.we-are {
+text-align: center;
+font-size: 30px;
+border-bottom: 3px solid grey;
+margin-left: 150px;
+margin-right: 60px;
+}
 
 .box-1  {
     color: #373867;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+    margin-left: 150px;
+    margin-right: 60px
 }
 
 .box-2  {
     color: #49a37b;
     font-size: 18px;
     font-weight: lighter;
+    line-height: 30px;
+    margin-left: 150px;
+    margin-right: 60px;
 }
 .section-choose h2  {
 font: size 30px;    
