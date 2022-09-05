@@ -1,16 +1,17 @@
 /* PARA TODO EL HTML */
 
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    height: 6864px;
-    width: 1440px;
-    
+    /* height: 6864px;
+    width: 1440px; */
 }
 header  {
-    width: 1288px;
+    
     height: 982px;
     margin-left: 152px;
     background-image: url(../assets/imagen-header.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .header-background  {
@@ -40,8 +41,8 @@ header  {
 aside {
 width: 152px;
 height: 982px;
-position:sticky;
-top: 0;
+position:fixed;
+
 }
 .contact-us {
     padding-top: 300px;
@@ -55,10 +56,9 @@ top: 0;
     color: #f13312;
     text-align: left;
 }
-.contact-us-icons   {
+/* .contact-us-icons   {
   
-
-}
+} */
 
 h1  {
     font: size 40px; 
@@ -78,19 +78,23 @@ text-align: center;
 font-size: 30px;
 border-bottom: 3px solid grey;
 margin-left: 150px;
+margin-top: 100px;
 margin-right: 60px;
 }
 
 .box-1  {
+    text-align: center;
     color: #373867;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     margin-left: 150px;
+    margin-top: 80px;
     margin-right: 60px
 }
 
 .box-2  {
+    text-align: center;
     color: #49a37b;
     font-size: 18px;
     font-weight: lighter;
@@ -98,20 +102,60 @@ margin-right: 60px;
     margin-left: 150px;
     margin-right: 60px;
 }
-.section-choose h2  {
-font: size 30px;    
-}
-.section-choose {    
+.why-choose-us  {
     font-size: 30px;
+    font-weight: bold;
+    margin-top: 130px;
+    text-align: center;
+    border-bottom: 3px solid grey;
+    margin-left: 150px;
+    margin-right: 60px;
 }
 .choose-us-1y3  {
-
+    text-align: left;
+    font-size: 20px;
+    width: 650px;
+    margin-left: 160px;
+    margin-top: 160px;
+}
+.choose-img-1y3 {
+   margin-left: 700px;
+   margin-top: -220px;
+}
+.choose-us-title-1  {
+    border-bottom: 3px solid grey;
+    width: 700px;
+}
+.choose-us-title-2  {
+    font-size: 30px;
+    margin-bottom: -02px;  
+    margin-left: 100px;
+} 
+.choose-us-text {
+    margin-left: 100px;
+}
+.choose-us-img-2y4  {
+   display: inline;
+   margin-top: -200px;
+   margin-left: 160px;
 }
 
 .choose-us-2y4  {
-    background-color: #d9d9d9;
+    font-size: 20px;
+    width: 650px;
+    margin-left: 700px;
+    padding-top: 100px;
 }
+.border-1 {
+    border-bottom: 3px solid grey;
+    width: 630px;
+}
+.background-2y4 {
+    background-color: #d9d9d9;
+    height: 600px;
+    
 
+}
 
 
 footer  {   
