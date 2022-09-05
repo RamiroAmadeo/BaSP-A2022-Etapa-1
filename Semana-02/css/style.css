@@ -153,9 +153,29 @@ margin-right: 60px;
 .background-2y4 {
     background-color: #d9d9d9;
     height: 600px;
-    
-
 }
+.funcionaliti-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid grey;
+    width: 1170px;
+    margin-left: 210px;
+}
+
+.funcionalities {
+    display: inline-block;
+    width: 35%;
+    padding-left: 152px;
+}
+
+.funcion-title-text {
+    padding-left: 200px;
+}
+.funcion-image  {
+    margin-top: -130px;
+}
+
 
 
 footer  {   
