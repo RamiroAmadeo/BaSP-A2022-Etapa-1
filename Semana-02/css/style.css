@@ -3,8 +3,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    /* height: 6864px;
-    width: 1440px; */
+    height: 6864px;
+    width: 1440px;
 }
 header  {
     
@@ -173,10 +173,6 @@ margin-right: 60px;
 }
 .funcion-image  {
     margin-top: -130px;
-    color: black;
-}
-.funcion-image:hover    {
-    fill: red;
 }
 .contact-title  {
     text-align: center;
@@ -209,12 +205,45 @@ margin-right: 60px;
 }
 .button-1 {
     font-size: 15px;
-    
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
     background-color: #aace9b;
     color: #373867;
+    width: 200px;
+}
+.button-1 img{
+    margin-bottom: -07px;
+    margin-left: -05;
+    
+}
+.button-1 p{
+    display: inline;
+    font-weight: 700;
+}
+
+.button-2 {
+    font-size: 15px;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f13312;
+    color: #373867;
+    width: 100px;
+    position: absolute;
+    right: 0%;
+    margin-right: 10px;
+
+} 
+
+.button-2 p{
+    display: inline;
+    font-weight: 700;
+}
+
+.background-button{
+width: 1050px;
+position: relative;
 }
 .img-1  {
     width: 20px;
@@ -229,8 +258,11 @@ margin-right: 60px;
 #lists div  {
     display: inline-block;
     width: 250px;
-    padding-left: 70px;
+    padding-left: 80px;
     padding-top: 40px;
+}
+#lists h4   {
+    padding-left: 25px;
 }
 
 footer  {   
