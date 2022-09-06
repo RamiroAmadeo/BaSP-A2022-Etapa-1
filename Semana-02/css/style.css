@@ -7,7 +7,6 @@ body {
     width: 1440px;
 }
 header  {
-    
     height: 982px;
     margin-left: 152px;
     background-image: url(../assets/imagen-header.png);
@@ -19,21 +18,18 @@ header  {
     width: 481px;
     height: 981px;
     margin-left: 76px;
-   
 }
 .header-title   {
     border-bottom: 2px solid #aace9b;
     width: 452px;
 }
-
 .header-text    {
     width: 366px;
     padding-top: 170px;
     padding-left: 22px; 
     line-height: 30px;
     color: white;
-    text-align: left;
-    
+    text-align: left; 
 }
 .header-text-1  {
     padding-top: 30px;
@@ -275,10 +271,12 @@ footer  {
 footer div a  {
     padding-left: 50px;
 }
-a   {
+a{
     text-decoration: none;
+}
+a:visited{
+    color: black;
 }
 a:hover   {
     color: red;   
 }
-
