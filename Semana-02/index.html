@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,34 +16,36 @@
             <img src="assets/logo.png" alt="logo.png">
             <nav>
                 <div>
-                    <img src="assets/Home-work.png" alt="home-work.png">
-                    <a href="#">Home</a>
+                    <i id="icono" class="fa-solid fa-house-chimney"></i>
+                    <a href="#"><p>Home</p></a>
                 </div>
                 <div>
-                    <img src="assets/Person.png" alt="person.png">
-                    <a href="#">SignUp</a>
+                    <i id="icono" class="fa-solid fa-user"></i>
+                    <a href="#"><p>Sign Up</p></a>
                 </div>
                 <div>
-                    <img src="assets/Person.png" alt="person.png">
-                    <a href="#">Login</a>
+                    <i id="icono" class="fa-solid fa-user"></i>
+                    <a href="#"><p>Login</p></a>
                 </div>
             </nav>
-            <p class="contact-us-title">
-                Contact Us
-            </p>
-            <div class="contact-us">
-                <img class="contact-us-icons" src="assets/mail.png" alt="mail.png">
-                <p class="contact-us-text">
-                    trackgenix@gmail.com
+            <div class="contact">
+                <p class="contact-us-title">
+                    Contact Us
                 </p>
-                <img class="contact-us-icons" src="assets/Call.png" alt="call.png">
-                <p class="contact-us-text">
-                    (000) 000-0000
-                </p>
-                <img class="contact-us-icons" src="assets/Home-work.png" alt="home.png">
-                <p class="contact-us-text">
-                    1234 Somewhere Road #8254 Nashville,TN 00000-0000
-               </p>
+                <div class="contact-us">
+                    <img class="contact-us-icons" src="assets/MessageIcon.png" alt="mail.png">
+                    <p class="contact-us-text">
+                        trackgenix@gmail.com
+                    </p>
+                    <img class="contact-us-icons" src="assets/Call.png" alt="call.png">
+                    <p class="contact-us-text">
+                        (000) 000-0000
+                    </p>
+                    <img class="contact-us-icons-3" src="assets/Home-work.png" alt="home.png">
+                    <p class="contact-us-text">
+                        1234 Somewhere Road #8254 Nashville,TN 00000-0000
+                    </p>
+                </div>
             </div> 
         </aside>
         <header>
@@ -144,7 +147,7 @@
                     </p>
                 </div>
                 <a href="#" target="_self">
-                <img class="funcion-image" src="assets/icons/hours-log.png" alt="hours-log.png"></a>
+                <img class="funcion-image" src="assets/icons/Hours_Log-removebg-preview.png" alt=""></a>
             </div>
             <div class="funcionalities">
                 <div class="funcion-title-text">
@@ -156,7 +159,7 @@
                     </p>
                 </div>
                 <a href="#" target="_self">
-                <img class="funcion-image" src="assets/icons/reports.png" alt="reports.png"></a>
+                <img class="funcion-image" src="assets/icons/Reports-removebg-preview.png" alt="reports.png"></a>
             </div>
             <div class="funcionalities">
                 <div class="funcion-title-text">
@@ -168,7 +171,7 @@
                     </p>
                 </div>
                 <a href="#" target="_self">
-                <img class="funcion-image" src="assets/icons/resource-management.png" alt="resource-management.png"></a>
+                <img class="funcion-image" src="assets/icons/Resource_Management-removebg-preview.png" alt="resource-management.png"></a>
             </div> 
             <div class="funcionalities">       
                 <a href="#" target="_self">
@@ -180,13 +183,13 @@
                     </p>
                 </div>
                 <a href="#" target="_self">
-                <img class="funcion-image" src="assets/icons/multiple-roles.png" alt="multiples-roles.png"></a>
+                <img class="funcion-image" src="assets/icons/Multiple_Roles-removebg-preview.png" alt="multiples-roles.png"></a>
             </div>
         </section>
         <h2 class="funcionaliti-title">Contact</h2>
         <form class="my-form">
             <div>
-                <label>Nombre</label>
+                <label>Name</label>
                 <input required type="text" placeholder="Nombre">
                 <select>
                     <option disabled selected>Contact area</option>
@@ -205,16 +208,16 @@
             </div>
             <div class="background-button">
                 <button type="submit" class="button-1">
-                    <img src="assets/icons/message.png" alt="message.png">
+                    <i class="fa-regular fa-envelope"></i>
                     <p>Send message</p>
                 </button>
                 <button type="reset" class="button-2">
-                    <img src="assets/icons/vector.png" alt="vector.png">
+                    <i class="fa-solid fa-xmark"></i>
                     <p>Reset</p>
                 </button>
             </div>
         </form>
-        <section id="lists">
+        <section class="lists">
             <div>
                 <h4>Products</h4>
                 <ol>
@@ -245,16 +248,11 @@
         </section>
         <footer>
             <div>
-                <a href="http://www.linkedin.com" target="_blank"><img src="assets/LinkedIn-Negative.png"
-                alt="LinkedIn"></a>
-                <a href="http://www.facebok.com" target="_blank"><img src="assets/Facebook-Negative.png"
-                alt="Facebook"></a>
-                <a href="http://www.twitter.com" target="_blank"><img src="assets/Twitter-Negative.png"
-                alt="Twitter"></a>
-                <a href="http://www.instagram.com" target="_blank"><img src="assets/Instagram-Negative.png" 
-                alt="Instagram"></a>
-                <a href="http://www.github.com" target="_blank"><img src="assets/Github-Negative.png" 
-                alt="Github"></a>
+                <a href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://www.facebok.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             <div>
                 <h5>Rosario, Argentina</h5>
