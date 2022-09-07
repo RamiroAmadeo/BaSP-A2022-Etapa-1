@@ -18,4 +18,7 @@ The company GigaTech Software Solutions SA provides software development service
 
 > In this week we learned how to use **HTML** for the task of create the landing page of the last week. Besides we learned how to use **Git** for a good follow of ur work.
 
+### Week 03
+> This week i learn how to use css. It means that i know how to give color and positionate the elements that we wright in HTML last week. It was more difficult than i thougt but it was very interesting. 
+
 **_By Ramiro Amadeo_**
