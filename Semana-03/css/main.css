@@ -1,0 +1,17 @@
+main section h2{
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 10px #d9d9d9 solid;
+}
+.box-1{
+    text-align: center;
+    color: #373867;
+    font-size: 15px;
+    line-height: 20px;
+}
+.box-2{
+    text-align: center;
+    color: #49a37b;
+    font-size: 13px;
+    line-height: 20px;
+}

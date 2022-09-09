@@ -1,6 +1,8 @@
 /* PARA TODO EL HTML */
-
-body {
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* body {
     margin: 0;
     width: 1420px;
     font-family: 'Roboto', sans-serif;
@@ -328,3 +330,4 @@ footer div a{
     color: #373867;
 }
 
+ */
