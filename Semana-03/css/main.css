@@ -1,5 +1,6 @@
 main section h2{
     padding-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     border-bottom: 10px #d9d9d9 solid;
 }
@@ -11,21 +12,50 @@ main section h2{
 }
 .box-2{
     text-align: center;
+    padding-top: 10px;
     color: #49a37b;
     font-size: 13px;
     line-height: 20px;
 }
 /* WHY CHOOSE US */
 .choose-us-1y3{
+    height: 250px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    
-
+    align-items: center 
 }
-.choose-us-1y3 img{
-    width: 300px;
+.choose-us-1y3 h3{
+    font-size: 18px;
+    border-bottom: 2px solid #286276;
+    width: 100%;
+    padding-left: 5px;
+}
+.choose-us-1y3 p{
+    font-size: 15px;
+    padding-left: 5px;
+    width: 90%;
+}
+.choose-us-img{
+    width: 200px;
     height: 200px;
+    margin: 5px;
+}
+.background-2y4{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+}
+
+.background-2y4 h3{
+    font-size: 18px;
+    padding-left: 5px;
+    border-bottom: 2px  solid   #ffffff;
+}
+.background-2y4 p{
+    font-size: 15px;
+    width: 90%;
+    padding-left: 5px;
 }
 /* FUNCIONALITIES */
 
@@ -33,6 +63,15 @@ main section h2{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.funcionalities h3{
+    font-size: 18px;
+}
+.funcionalities p{
+    font-size: 15px;
+    width: 90%;
 }
 .funcionalities img{
     width: 110px;
