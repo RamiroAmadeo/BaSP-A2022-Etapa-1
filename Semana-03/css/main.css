@@ -75,6 +75,7 @@ main section h2{
 }
 .funcionalities h3{
     font-size: 18px;
+    margin-bottom: 02%;
 }
 .funcionalities p{
     font-size: 15px;
@@ -98,6 +99,8 @@ main section h2{
     font-size: 16px;
     line-height: 25px; 
 }
+/*  WHY CHOOSE US*/
+
 .choose-us-1y3 h3{
     font-size: 25px;
     border-bottom: 4px solid #286276;
@@ -116,5 +119,17 @@ main section h2{
 }
 .background-2y4 p{
     font-size: 20px;
+    margin-top: 20px;
+}
+/*FUNCIONALITIES*/
+.funcionalities h3{
+    font-size: 25px;
+}
+.funcionalities p{
+    font-size: 20px;
+}
+.funcionalities img{
+    width: 125px;
+    height: 125px;
 }
 }
