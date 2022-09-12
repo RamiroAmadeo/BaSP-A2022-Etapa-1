@@ -14,3 +14,11 @@
 .lists a:hover{
     color: #f13312;
 }
+@media screen and (min-width: 768px){
+.lists h4{
+    font-size: 18px;
+}
+.lists ol{
+    padding: 15px;
+}
+}

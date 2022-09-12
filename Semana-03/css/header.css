@@ -2,6 +2,7 @@ header{
     background-image: url(../assets/imagen-header.png);
     color: #ffffff;
     height: 500px;
+    /* margin-top: -5px; */
 }
 .header-background{
     margin-left: 20%;
