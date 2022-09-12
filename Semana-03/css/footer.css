@@ -19,8 +19,5 @@ footer{
     color: #ffff;
 }
 @media screen and (min-width: 768px ){
-footer{
-    background-color: red;
-}
 }
     

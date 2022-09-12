@@ -5,12 +5,14 @@ main section h2{
     border-bottom: 10px #d9d9d9 solid;
 }
 .box-1{
+    margin: 5px;
     text-align: center;
     color: #373867;
     font-size: 15px;
     line-height: 20px;
 }
 .box-2{
+    margin: 5px;
     text-align: center;
     padding-top: 10px;
     color: #49a37b;
@@ -77,4 +79,17 @@ main section h2{
     width: 110px;
     height: 110px;
     margin-right: 10px;
+}
+@media screen and (min-width: 768px){
+main section h2{
+    font-size: 27px;
+}
+.box-1{
+    font-size: 18px;
+    line-height: 25px;
+}
+.box-2{
+    font-size: 16px;
+    line-height: 25px; 
+} 
 }

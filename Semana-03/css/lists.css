@@ -11,3 +11,6 @@
     font-size: 13px;
     padding: 10px 
 }
+.lists a:hover{
+    color: #f13312;
+}
