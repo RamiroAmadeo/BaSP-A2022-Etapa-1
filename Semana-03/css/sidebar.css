@@ -1,9 +1,48 @@
 .sidebar{
     display: none;
 }
-.hamburguesa{
+
+@media screen and (min-width: 1024px){
+.fa-bars{
+    display: none;
+}
+.sidebar{
     display: flex;
     flex-direction: column;
-    width: 10px;
-    
+    width: 150px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    color: #f13312;
+    font-weight: bold;
+}
+.nashe{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    margin-left: 35px;
+}
+.contact-all{
+   
+}
+.contact-all p{
+    margin-left: 5px;
+}
+.contact-information{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 10px;
+    height: 50px;
+}
+.contact-information p{
+    padding-left: 3px;
+
+}
 }

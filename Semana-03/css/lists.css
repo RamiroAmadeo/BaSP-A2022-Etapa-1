@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 120px;
+    height: 180px;
     margin-top: 10px;
     color: #373867;
     background-image: url(../assets/list-picture.png);
@@ -18,5 +18,9 @@
 .lists h4{
     font-size: 18px;
 }
-
+}
+@media screen and (min-width: 1024px){
+.lists h4{
+    font-size: 20px;
+}
 }

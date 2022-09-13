@@ -91,9 +91,20 @@ form h2{
     width: 100%;
 } 
 .button-one{
-    margin-left: 30px;
+    margin-left: 04%;
 }
 .button-two{
-    margin-right: 30px;
+    margin-right: 04%;
+}
+}
+@media screen and (min-width: 1024px){
+.my-form textarea{
+    width: 259%;
+}
+.button-one{
+    margin-left: 9%;
+}
+.button-two{
+    margin-right: 9%;
 }
 }

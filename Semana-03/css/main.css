@@ -63,7 +63,7 @@ main section h2{
 .funcionalities{
     display: flex;
     flex-direction: row-reverse;
-    padding-left: 30px;
+    padding-left: 20px;
     margin-bottom: 10px;
 }
 .funcionalities h3{
@@ -118,9 +118,6 @@ main section h2{
 .background-2y4{
     flex-direction: row;
 }
-.background-2y4, h3, p{
-    padding-left: 20px;
-}
 .background-2y4 h3{
     text-align: left;
     font-size: 25px;
@@ -134,10 +131,21 @@ main section h2{
     font-size: 20px;
 }
 /*FUNCIONALITIES*/
-/* .blo{
+.funcionalities{
+    width: 47%;
+}
+.deci{
+    margin-left: 10px;
+}
+.block{
     display: flex;
-    width: 400px
-} */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
 .funcionalities h3{
     font-size: 25px;
 }
@@ -147,4 +155,39 @@ main section h2{
 .funcionalities img{
     width: 125px;
     height: 125px;
+}
+@media screen and (min-width: 1024px){
+main section h2{
+    font-size: 30px;
+}
+.box-1{
+    font-size: 20px;
+}
+.box-2{
+    font-size: 18px;
+}
+/*WHY CHOOSE US*/
+.choose-us-1y3 h3{
+    font-size: 30px;
+}
+.choose-us-1y3 p{
+    font-size: 25px;
+}
+.choose-us-img{
+    width: 500px;
+    height: 400px;
+}
+.background-2y4 h3{
+    font-size: 30px;
+}
+.background-2y4 p{
+    font-size: 25px;
+}
+.text-one{
+    margin-bottom: 60px;
+    padding-left: 20px;
+}
+.text-two{
+    margin-bottom: 60px;
+}
 }

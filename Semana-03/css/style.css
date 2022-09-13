@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
 }
+.padre-supremo{
+    display: flex;
+}
+aside a:hover, i:hover{
+    color: #f13312;
+}
 a{
     text-decoration: none;
 }
