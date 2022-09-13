@@ -33,9 +33,9 @@ main section h2{
     border-bottom: 2px solid #286276;
 }
 .choose-us-1y3 p{
+    width: 100%;
     text-align: center;
     font-size: 15px;
-    width: 100%
 }
 .choose-us-img{
     width: 70%;
@@ -54,16 +54,15 @@ main section h2{
     border-bottom: 2px solid #ffffff;
 }
 .background-2y4 p{
+    width: 100%;
     text-align: center;
     font-size: 15px;
-    width: 100%;
 }
 /* FUNCIONALITIES */
 
 .funcionalities{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     padding-left: 30px;
     margin-bottom: 10px;
 }
@@ -95,31 +94,50 @@ main section h2{
 }
 /*  WHY CHOOSE US*/
 
+.choose-us-1y3{
+    flex-direction: row-reverse;  
+    padding-left: 5px; 
+}
 .choose-us-1y3 h3{
+    text-align: left;
     font-size: 25px;
     border-bottom: 4px solid #286276;
 }
 .choose-us-1y3 p{
+    width: 90%;
     margin-top: 20px;
     font-size: 20px;
+    text-align: left;
 }
 .choose-us-img{
-    /* margin-top: 05%;
+    margin-top: 05%;
     margin-bottom: 05%;
     margin-right: 02%;
-    margin-left: 02%; */
-    width: 400px;
-    height: 300px; 
+    height: 250px; 
+}
+.background-2y4{
+    flex-direction: row;
+}
+.background-2y4, h3, p{
+    padding-left: 20px;
 }
 .background-2y4 h3{
+    text-align: left;
     font-size: 25px;
     border-bottom: 4px solid #ffffff
 }
 .background-2y4 p{
-    font-size: 20px;
+    width: 90%;
     margin-top: 20px;
+    margin-right: 5px;
+    text-align: left;
+    font-size: 20px;
 }
 /*FUNCIONALITIES*/
+/* .blo{
+    display: flex;
+    width: 400px
+} */
 .funcionalities h3{
     font-size: 25px;
 }
@@ -129,5 +147,4 @@ main section h2{
 .funcionalities img{
     width: 125px;
     height: 125px;
-}
 }

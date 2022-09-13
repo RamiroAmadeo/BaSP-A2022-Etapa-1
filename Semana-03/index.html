@@ -18,7 +18,7 @@
         <title>Trackgenix</title>
     </head>
     <body>
-        <aside>
+        <aside class="sidebar">
             <img src="assets/logo.png" alt="logo.png">
             <nav>
                 <div>
@@ -95,7 +95,7 @@
                 <h2 class="why-choose-us">Why choose us?</h2>
                     <article class="choose-us-1y3">
                         <img class="choose-us-img" src="assets/productivity.png" alt="productivity.png">
-                        <div class="why-text">
+                        <div>
                             <a href="#">
                             <h3>Productivity booster</h3></a>
                             <p>
@@ -107,7 +107,7 @@
                     </article>
                 <article class="background-2y4">
                         <img class="choose-us-img" src="assets/work-traceability.png" alt="work-traceability.png">
-                        <div class="border-1">
+                        <div>
                             <a href="#">
                             <h3>Work traceability</h3></a>
                             <p>
@@ -131,7 +131,7 @@
                 </article>
                 <article class="background-2y4">
                     <img class="choose-us-img" src="assets/decision-tacking.png" alt="decision-tacking.png">
-                        <div class="border-1">
+                        <div>
                             <a href="#">
                             <h3>Decision making</h3></a>
                             <p>
@@ -144,53 +144,55 @@
             </section>
             <section>
                 <h2>Funcionalities</h2>
-                <div class="funcionalities">
-                    <div>
+                <div class="blo">
+                    <div class="funcionalities">
+                        <div class="deci">
+                            <a href="#" target="_self">
+                            <h3>Hours log</h3></a>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                            </p>
+                        </div>
+                        <img class="funcion-image" src="assets/icons/Hours_Log-removebg-preview.png" alt=""></a>
                         <a href="#" target="_self">
-                        <h3>Hours log</h3></a>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard.
-                        </p>
                     </div>
-                    <img class="funcion-image" src="assets/icons/Hours_Log-removebg-preview.png" alt=""></a>
-                    <a href="#" target="_self">
-                </div>
-                <div class="funcionalities">
-                    <div>
+                    <div class="funcionalities">
+                        <div class="deci">
+                            <a href="#" target="_self">
+                            <h3>Reports</h3></a>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                            </p>
+                        </div>
                         <a href="#" target="_self">
-                        <h3>Reports</h3></a>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard.
-                        </p>
+                        <img src="assets/icons/Reports-removebg-preview.png" alt="reports.png"></a>
                     </div>
-                    <a href="#" target="_self">
-                    <img src="assets/icons/Reports-removebg-preview.png" alt="reports.png"></a>
-                </div>
-                <div class="funcionalities">
-                    <div>
+                    <div class="funcionalities">
+                        <div class="deci">
+                            <a href="#" target="_self">
+                            <h3>Resource management</h3></a>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                            </p>
+                        </div>
                         <a href="#" target="_self">
-                        <h3>Resource management</h3></a>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard.
-                        </p>
+                        <img src="assets/icons/Resource_Management-removebg-preview.png" alt="resource-management.png"></a>
+                    </div> 
+                    <div class="funcionalities">
+                        <div class="deci">
+                        <a href="#" target="_self">
+                            <h3>Multiple roles</h3></a>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                            </p>
+                        </div>
+                        <a href="#" target="_self">
+                        <img src="assets/icons/Multiple_Roles-removebg-preview.png" alt="multiples-roles.png"></a>
                     </div>
-                    <a href="#" target="_self">
-                    <img src="assets/icons/Resource_Management-removebg-preview.png" alt="resource-management.png"></a>
-                </div> 
-                <div class="funcionalities">
-                    <a href="#" target="_self">
-                    <div>
-                        <h3>Multiple roles</h3></a>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard.
-                        </p>
-                    </div>
-                    <a href="#" target="_self">
-                    <img src="assets/icons/Multiple_Roles-removebg-preview.png" alt="multiples-roles.png"></a>
                 </div>
             </section>
         </main>
@@ -198,12 +200,18 @@
             <h2>Contact</h2>
             <section class="my-form">
                 <div>
-                    <label>Name</label>
-                    <input required type="text" placeholder="Your Name Here">
-                </div>
-                <div>        
-                    <label>E-mail</label>
-                    <input required type="text" placeholder="Your E-mail Here">
+                    <div>
+                        <label>Name</label>
+                        <input required type="text" placeholder="Your Name Here">
+                    </div>
+                    <div>        
+                        <label>E-mail</label>
+                        <input required type="text" placeholder="Your E-mail Here">
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea style="resize: none;"placeholder="Your message here" name="Message"></textarea>
+                    </div>
                 </div>   
                 <select>
                     <option disabled selected>Contact area</option>
@@ -211,10 +219,6 @@
                     <option value="Systems">Systems</option>
                     <option value="Commercialization">Commercialization</option>
                 </select>
-                <div>
-                    <label>Message</label>
-                    <textarea style="resize: none;"placeholder="Your message here" name="Message"></textarea>
-                </div>
             </section>
             <div class="buttons">
                 <button type="submit" class="button-one">
