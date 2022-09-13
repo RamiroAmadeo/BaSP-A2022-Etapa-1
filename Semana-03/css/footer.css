@@ -27,4 +27,12 @@ footer{
     margin-right: 30px;
 }
 }
+@media screen and (min-width: 1024px){
+.fa-facebook, .fa-linkedin, .fa-twitter, .fa-instagram, .fa-github{
+    margin-top: 10px;
+}
+.copy-right{
+    margin-top: 10px;
+}
+}
     
