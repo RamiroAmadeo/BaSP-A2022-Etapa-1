@@ -1,7 +1,6 @@
 .sidebar{
     display: none;
 }
-
 @media screen and (min-width: 1024px){
 .fa-bars{
     display: none;
@@ -22,6 +21,12 @@
     color: #f13312;
     font-weight: bold;
 }
+.nav-cont p{
+    color: #f13312;
+}
+.nav-cont p:hover{
+    color: #373867;
+}
 .nav-cont{
     display: flex;
     flex-direction: row;
@@ -32,6 +37,7 @@
 }
 .nav-cont p{
     padding-left: 10px;
+    color: #f13312;
 }
 .contact-all p{
     margin-left: 5px;

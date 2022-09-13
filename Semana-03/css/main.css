@@ -20,19 +20,19 @@ main section h2{
     line-height: 20px;
 }
 /* WHY CHOOSE US */
-.choose-us-1y3{
+.choose-us-one{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
-.choose-us-1y3 h3{
+.choose-us-one h3{
     width: 100%;
     margin-top: 02%;
     text-align: center;
     font-size: 18px;
     border-bottom: 2px solid #286276;
 }
-.choose-us-1y3 p{
+.choose-us-one p{
     width: 100%;
     text-align: center;
     font-size: 15px;
@@ -41,25 +41,24 @@ main section h2{
     width: 70%;
     height: 200px;
 }
-.background-2y4{
+.choose-us-two{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     background-color: #d9d9d9;
 }
-.background-2y4 h3{
+.choose-us-two h3{
     margin-top: 02%;
     text-align: center;
     font-size: 18px;
     border-bottom: 2px solid #ffffff;
 }
-.background-2y4 p{
+.choose-us-two p{
     width: 100%;
     text-align: center;
     font-size: 15px;
 }
 /* FUNCIONALITIES */
-
 .funcionalities{
     display: flex;
     flex-direction: row-reverse;
@@ -90,20 +89,19 @@ main section h2{
 }
 .box-2{
     font-size: 16px;
-    line-height: 25px; 
+    line-height: 25px;
 }
 /*  WHY CHOOSE US*/
-
-.choose-us-1y3{
-    flex-direction: row-reverse;  
-    padding-left: 5px; 
+.choose-us-one{
+    flex-direction: row-reverse;
+    padding-left: 5px;
 }
-.choose-us-1y3 h3{
+.choose-us-one h3{
     text-align: left;
     font-size: 25px;
     border-bottom: 4px solid #286276;
 }
-.choose-us-1y3 p{
+.choose-us-one p{
     width: 90%;
     margin-top: 20px;
     font-size: 20px;
@@ -113,17 +111,17 @@ main section h2{
     margin-top: 05%;
     margin-bottom: 05%;
     margin-right: 02%;
-    height: 250px; 
+    height: 250px;
 }
-.background-2y4{
+.choose-us-two{
     flex-direction: row;
 }
-.background-2y4 h3{
+.choose-us-two h3{
     text-align: left;
     font-size: 25px;
     border-bottom: 4px solid #ffffff
 }
-.background-2y4 p{
+.choose-us-two p{
     width: 90%;
     margin-top: 20px;
     margin-right: 5px;
@@ -134,7 +132,7 @@ main section h2{
 .funcionalities{
     width: 47%;
 }
-.deci{
+.deck{
     margin-left: 10px;
 }
 .block{
@@ -173,20 +171,20 @@ main section h2{
     line-height: 30px;
 }
 /*WHY CHOOSE US*/
-.choose-us-1y3 h3{
+.choose-us-one h3{
     font-size: 30px;
 }
-.choose-us-1y3 p{
+.choose-us-one p{
     font-size: 25px;
 }
 .choose-us-img{
     width: 500px;
     height: 400px;
 }
-.background-2y4 h3{
+.choose-us-two h3{
     font-size: 30px;
 }
-.background-2y4 p{
+.choose-us-two p{
     font-size: 25px;
 }
 .text-one{

@@ -19,7 +19,7 @@ header i{
 .header-title{
     display: flex;
     flex-direction: column;
-    padding-top: 10%;   
+    padding-top: 10%;
 }
 .text-container{
     padding-left: 10px;
@@ -34,7 +34,7 @@ header i{
     margin-top: 5%;
 }
 header h1{
-    font-size: 35px; 
+    font-size: 35px;
     font-weight: 700;
     border-bottom: 2px solid #aace9b;
 }
