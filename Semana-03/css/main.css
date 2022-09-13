@@ -156,15 +156,21 @@ main section h2{
     width: 125px;
     height: 125px;
 }
+}
 @media screen and (min-width: 1024px){
+main{
+    margin-left: 150px;
+}
 main section h2{
     font-size: 30px;
 }
 .box-1{
     font-size: 20px;
+    line-height: 30px;
 }
 .box-2{
     font-size: 18px;
+    line-height: 30px;
 }
 /*WHY CHOOSE US*/
 .choose-us-1y3 h3{

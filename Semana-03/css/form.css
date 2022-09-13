@@ -6,18 +6,18 @@ form h2{
 }
 .my-form{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
     align-items: center;
 }
 .my-form input[type="text"]{
-    width: 320px;
+    width: 340px;
     height: 30px;
     border-color: #373867;
     border-radius: 5px;
 }
 .my-form textarea{
-    width: 320px;
+    width: 340px;
     height: 50px;
     border-color: #373867;
     border-radius: 5px;
@@ -34,7 +34,7 @@ form h2{
 }
 .my-form select{
     margin-top: 5px;
-    width: 325px;
+    width: 340px;
     height: 34px;
     border-color: #373867;
     border-radius: 5px;
@@ -67,23 +67,39 @@ form h2{
     background-color: #f13312;
 }
 @media screen and (min-width: 768px){
+   
 .my-form{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    margin-left: 05%;
+    margin-right: 05%;
+}
+.my-form div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-form div div{
+    display: block;  
 }
 .my-form label{
-    align-items: flex-start;
+    text-align: left;
+}
+.b{
+    order: 2;
+}
+.c{
+    order: 1;
+}
+.message{
+    width: 100%;
 }
 .my-form select{
     align-self: flex-start;
     margin-top: 27px;
 }
 .my-form textarea{
-    width: 218%;
+    width: 100%;
     height: 80px;
-    justify-content: flex-end;
 }
 .buttons{
     display: flex;
@@ -91,20 +107,17 @@ form h2{
     width: 100%;
 } 
 .button-one{
-    margin-left: 04%;
+    margin-left: 05%;
 }
 .button-two{
-    margin-right: 04%;
+    margin-right: 05%;
 }
 }
 @media screen and (min-width: 1024px){
-.my-form textarea{
-    width: 259%;
-}
-.button-one{
-    margin-left: 9%;
-}
-.button-two{
-    margin-right: 9%;
-}
+    .my-form input[type="text"]{
+        width: 400px;
+    }
+    .my-form select{
+        width: 400px;
+    } 
 }

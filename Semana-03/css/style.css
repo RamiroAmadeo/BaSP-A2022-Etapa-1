@@ -5,8 +5,12 @@
 }
 .padre-supremo{
     display: flex;
+    
 }
 aside a:hover, i:hover{
+    color: #f13312;
+}
+main a:hover{
     color: #f13312;
 }
 a{
@@ -14,6 +18,11 @@ a{
 }
 a:visited{
     color: #373867
+}
+@media screen and (min-width: 1024px){
+main, form, footer{
+    margin-left: 150px;
+}
 }
 /* body {
     margin: 0;

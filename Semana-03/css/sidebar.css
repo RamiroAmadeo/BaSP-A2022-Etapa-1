@@ -9,6 +9,9 @@
 .sidebar{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    background-color: #ffffff;
+    height: 100%;
     width: 150px;
 }
 .container{
@@ -19,16 +22,16 @@
     color: #f13312;
     font-weight: bold;
 }
-.nashe{
+.nav-cont{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     height: 60px;
-    margin-left: 35px;
+    margin-left: 30px;
 }
-.contact-all{
-   
+.nav-cont p{
+    padding-left: 10px;
 }
 .contact-all p{
     margin-left: 5px;
@@ -43,6 +46,5 @@
 }
 .contact-information p{
     padding-left: 3px;
-
 }
 }

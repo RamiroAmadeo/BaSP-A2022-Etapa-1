@@ -23,15 +23,15 @@
                 <img src="assets/logo.png" alt="logo.png">
                 <div class="container">
                     <nav>
-                        <div class="nashe">
+                        <div class="nav-cont">
                             <i id="icono" class="fa-solid fa-house-chimney"></i>
                             <a href="#"><p>Home</p></a>
                         </div>
-                        <div class="nashe">
+                        <div class="nav-cont">
                             <i id="icono" class="fa-solid fa-user"></i>
                             <a href="#"><p>Sign Up</p></a>
                         </div>
-                        <div class="nashe">
+                        <div class="nav-cont">
                             <i id="icono" class="fa-solid fa-user"></i>
                             <a href="#"><p>Login</p></a>
                         </div>
@@ -217,25 +217,27 @@
             <h2>Contact</h2>
             <section class="my-form">
                 <div>
-                    <div>
+                    <div class="a">
                         <label>Name</label>
                         <input required type="text" placeholder="Your Name Here">
                     </div>
-                    <div>        
+                    <div class="b">        
                         <label>E-mail</label>
                         <input required type="text" placeholder="Your E-mail Here">
                     </div>
-                    <div>
-                        <label>Message</label>
-                        <textarea style="resize: none;"placeholder="Your message here" name="Message"></textarea>
+                    <div class="c">
+                        <select>
+                            <option disabled selected>Contact area</option>
+                            <option value="Human resources">Human resources</option>
+                            <option value="Systems">Systems</option>
+                            <option value="Commercialization">Commercialization</option>
+                        </select>
                     </div>
                 </div>   
-                <select>
-                    <option disabled selected>Contact area</option>
-                    <option value="Human resources">Human resources</option>
-                    <option value="Systems">Systems</option>
-                    <option value="Commercialization">Commercialization</option>
-                </select>
+                <div class="message">
+                    <label>Message</label>
+                    <textarea style="resize: none;"placeholder="Your message here" name="Message"></textarea>
+                </div>
             </section>
             <div class="buttons">
                 <button type="submit" class="button-one">

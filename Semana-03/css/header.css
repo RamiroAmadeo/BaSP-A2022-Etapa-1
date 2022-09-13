@@ -5,8 +5,13 @@ header{
     height: 500px;
     width: 100%;
 }
+header i{
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: 20px;
+}
 .header-background{
-    margin-left: 20%;
+    margin-left: 10%;
     background: rgba(0, 0, 0, 0.6);
     height: 100%;
     width: 60%;
@@ -15,6 +20,9 @@ header{
     display: flex;
     flex-direction: column;
     padding-top: 10%;   
+}
+.text-container{
+    padding-left: 10px;
 }
 .header-title h2{
     padding-top: 5%;
@@ -43,13 +51,15 @@ header h1{
 header{
     height: 900px;
 }
+header i{
+    display: none;
+}
 .header-background{
     width: 40%;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 .text-container{
     padding-top: 20%;
-    padding-left: 10px;
 }
 .header-text{
     line-height: 30px;
