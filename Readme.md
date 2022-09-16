@@ -24,7 +24,11 @@ The company GigaTech Software Solutions SA provides software development service
 ### Week 03
 > Here we worked with the same landing as last week but this time with flex box. It was a bit difficult at the beginning but it was possible.
 
+### Week 04
+> In this week we start learning about programming in JavaScript.
+
 # Git hub pages
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
+## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
 
 **_By Ramiro Amadeo_**
