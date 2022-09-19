@@ -59,6 +59,3 @@ var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
 var monthsNew = months.slice(4,11);
 
 console.log(monthsNew);
-
-
-
