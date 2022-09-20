@@ -2,19 +2,21 @@ header{
     display: flex;
     background-image: url(../assets/imagen-header.png);
     color: #ffffff;
-    height: 500px;
-    width: 100%;
+    background-size: cover;
 }
 header i{
     margin-top: 8%;
-    margin-left: 5%;
+    margin-left: 2%;
+    color: #f13312;
     font-size: 20px;
+    position: fixed;
 }
 .header-background{
     margin-left: 10%;
     background: rgba(0, 0, 0, 0.6);
     height: 100%;
     width: 60%;
+    margin-bottom: 10%;
 }
 .header-title{
     display: flex;
@@ -24,23 +26,13 @@ header i{
 .text-container{
     padding-left: 10px;
 }
-.header-title h2{
-    padding-top: 5%;
-}
 .header-text{
     padding-top: 10%;
 }
 .header-text p{
     margin-top: 5%;
 }
-header h2{
-    font-size: 20px;
-    font-weight: 700;
-}
 @media screen and (min-width: 1024px){
-    header{
-        height: 900px;
-    }
     header i{
         display: none;
     }
@@ -49,7 +41,7 @@ header h2{
         margin-left: 25%;
     }
     .text-container{
-        padding-top: 20%;
+        padding-top: 10%;
     }
     .header-text{
         line-height: 30px;

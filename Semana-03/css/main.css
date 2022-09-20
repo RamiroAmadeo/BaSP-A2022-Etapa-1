@@ -1,17 +1,11 @@
-main section h2{
-    padding-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-bottom: 10px #d9d9d9 solid;
-}
-.box-1{
+.we-are-text{
     margin: 5px;
     text-align: center;
     color: #373867;
     font-size: 15px;
     line-height: 20px;
 }
-.box-2{
+.we-are-down-text{
     margin: 5px;
     text-align: center;
     padding-top: 10px;
@@ -20,19 +14,19 @@ main section h2{
     line-height: 20px;
 }
 /* WHY CHOOSE US */
-.choose-us-one{
+.choose-us-right{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
-.choose-us-one h3{
+.choose-us-right h4{
     width: 100%;
     margin-top: 02%;
     text-align: center;
     font-size: 18px;
     border-bottom: 2px solid #286276;
 }
-.choose-us-one p{
+.choose-us-right p{
     width: 100%;
     text-align: center;
     font-size: 15px;
@@ -41,19 +35,19 @@ main section h2{
     width: 60%;
     height: auto;
 }
-.choose-us-two{
+.choose-us-left{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     background-color: #d9d9d9;
 }
-.choose-us-two h3{
+.choose-us-left h4{
     margin-top: 02%;
     text-align: center;
     font-size: 18px;
     border-bottom: 2px solid #ffffff;
 }
-.choose-us-two p{
+.choose-us-left p{
     width: 100%;
     text-align: center;
     font-size: 15px;
@@ -65,43 +59,40 @@ main section h2{
     padding-left: 20px;
     margin-bottom: 10px;
 }
-.funcionalities h3{
+.funcionalities h4{
     font-size: 18px;
     margin-bottom: 02%;
 }
 .funcionalities p{
     font-size: 15px;
-    width: 90%;
+    width: 100%;
 }
+
 .funcionalities img{
-    width: 110px;
-    height: 110px;
+    width: 100%;
+    height: auto;
     margin-right: 10px;
 }
 @media screen and (min-width: 480px){
-    main section h2{
-        font-size: 27px;
-        margin-top: 05%;
-    }
-    .box-1{
+    .we-are-text{
         font-size: 18px;
         line-height: 25px;
     }
-    .box-2{
+    .we-are-down-text{
         font-size: 16px;
         line-height: 25px;
     }
-/*  WHY CHOOSE US*/
-    .choose-us-one{
+    /*WHY CHOOSE US*/
+    .choose-us-right{
         flex-direction: row-reverse;
         padding-left: 5px;
     }
-    .choose-us-one h3{
+    .choose-us-right h4{
         text-align: left;
         font-size: 25px;
         border-bottom: 4px solid #286276;
     }
-    .choose-us-one p{
+    .choose-us-right p{
         width: 90%;
         margin-top: 20px;
         font-size: 20px;
@@ -112,29 +103,30 @@ main section h2{
         margin-bottom: 05%;
         margin-right: 02%;
     }
-    .choose-us-two{
+    .choose-us-left{
         flex-direction: row;
     }
-    .choose-us-two h3{
+    .choose-us-left h4{
         text-align: left;
         font-size: 25px;
         border-bottom: 4px solid #ffffff
     }
-    .choose-us-two p{
+    .choose-us-left p{
         width: 90%;
         margin-top: 20px;
         margin-right: 5px;
         text-align: left;
         font-size: 20px;
     }
-/*FUNCIONALITIES*/
+    /*FUNCIONALITIES*/
     .funcionalities{
-        width: 47%;
+        width: 46%;
     }
-    .deck{
+    .funcionalities-h-p{
         margin-left: 10px;
+        width: 70%;
     }
-    .block{
+    .funcionalities-block{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -142,55 +134,79 @@ main section h2{
         margin-top: 20px;
         width: 100%;
     }
-
-    .funcionalities h3{
+    .funcionalities h4{
         font-size: 25px;
     }
     .funcionalities p{
         font-size: 20px;
     }
     .funcionalities img{
-        width: 125px;
-        height: 125px;
+        width: 100%;
+        height: auto;
     }
 }
 @media screen and (min-width: 1024px){
     main{
         margin-left: 150px;
     }
-    main section h2{
-        font-size: 30px;
-    }
-    .box-1{
+    .we-are-text{
         font-size: 20px;
         line-height: 30px;
     }
-    .box-2{
+    .we-are-down-text{
         font-size: 18px;
         line-height: 30px;
     }
     /*WHY CHOOSE US*/
-    .choose-us-one h3{
+    .choose-us-right h4{
         font-size: 30px;
     }
-    .choose-us-one p{
+    .choose-us-right p{
         font-size: 25px;
     }
-    .choose-us-img{
-        width: 500px;
-        height: 400px;
-    }
-    .choose-us-two h3{
+    .choose-us-left h4{
         font-size: 30px;
     }
-    .choose-us-two p{
+    .choose-us-left p{
         font-size: 25px;
     }
-    .text-one{
+    .text-right{
         margin-bottom: 60px;
         padding-left: 20px;
     }
-    .text-two{
+    .text-left{
         margin-bottom: 60px;
+    }
+}
+/*LISTS*/
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    color: #373867;
+    background-image: url(../assets/list-picture.png);
+}
+.lists a{
+    color: #373867;
+}
+.lists ol{
+    font-size: 13px;
+    padding: 15px
+}
+.lists a:hover{
+    color: #f13312;
+}
+@media screen and (min-width: 480px){
+    .lists h4{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .lists{
+        margin-left: 100px;
+    }
+    .lists h4{
+        font-size: 20px;
     }
 }

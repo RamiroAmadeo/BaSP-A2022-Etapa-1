@@ -81,10 +81,10 @@ form h2{
     .my-form label{
         text-align: left;
     }
-    .b{
+    .form-b{
         order: 2;
     }
-    .c{
+    .form-c{
         order: 1;
     }
     .message{

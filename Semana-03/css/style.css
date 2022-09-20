@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
 a{
     text-decoration: none;
 }
@@ -14,8 +19,22 @@ h1{
     font-weight: 700;
     border-bottom: 2px solid #aace9b;
 }
+h2{
+    padding-top: 5%;
+    font-size: 20px;
+    font-weight: 700;
+}
+h3{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 10px #d9d9d9 solid;
+}
 .father{
     display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
 }
 aside a:hover{
     color: #373867;
@@ -30,10 +49,14 @@ main a:hover{
     h1{
         font-size: 40px;
     }
+    h3{
+        font-size: 27px;
+        margin-top: 05%;
+    }
 }
 @media screen and (min-width: 1024px){
-    main, form, footer{
-        margin-left: 150px;
+    h3{
+        font-size: 30px;
     }
     aside a:hover{
         color: #373867;
