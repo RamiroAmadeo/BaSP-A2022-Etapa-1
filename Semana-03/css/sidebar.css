@@ -2,55 +2,62 @@
     display: none;
 }
 @media screen and (min-width: 1024px){
-.fa-bars{
-    display: none;
-}
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: #ffffff;
-    height: 100%;
-    width: 150px;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    color: #f13312;
-    font-weight: bold;
-}
-.nav-cont p{
-    color: #f13312;
-}
-.nav-cont p:hover{
-    color: #373867;
-}
-.nav-cont{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 60px;
-    margin-left: 30px;
-}
-.nav-cont p{
-    padding-left: 10px;
-    color: #f13312;
-}
-.contact-all p{
-    margin-left: 5px;
-}
-.contact-information{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 10px;
-    font-size: 10px;
-    height: 50px;
-}
-.contact-information p{
-    padding-left: 3px;
-}
+    .fa-bars{
+        display: none;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #ffffff;
+        height: 100%;
+        width: 150px;
+    }
+    .sidebar i:hover{
+        color: #373867;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        color: #f13312;
+        font-weight: bold;
+    }
+    .nav-container p{
+        color: #f13312;
+    }
+    .nav-container p:hover{
+        color: #373867;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        margin-left: 30px;
+    }
+    .nav-container p{
+        padding-left: 10px;
+        color: #f13312;
+    }
+    .contact-all p{
+        margin-left: 5px;
+    }
+    .contact-us-title{
+        border-bottom: solid 1px #f13312;
+        margin-right: 60px;
+    }
+    .contact-information{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 10px;
+        height: 50px;
+    }
+    .contact-information p{
+        padding-left: 3px;
+    }
 }

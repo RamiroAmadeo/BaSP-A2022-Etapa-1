@@ -33,37 +33,27 @@ header i{
 .header-text p{
     margin-top: 5%;
 }
-header h1{
-    font-size: 35px;
-    font-weight: 700;
-    border-bottom: 2px solid #aace9b;
-}
 header h2{
     font-size: 20px;
     font-weight: 700;
 }
-@media screen and (min-width: 768px){
-header h1{
-    font-size: 40px;
-}
-}
 @media screen and (min-width: 1024px){
-header{
-    height: 900px;
-}
-header i{
-    display: none;
-}
-.header-background{
-    width: 40%;
-    margin-left: 15%;
-}
-.text-container{
-    padding-top: 20%;
-}
-.header-text{
-    line-height: 30px;
-}
+    header{
+        height: 900px;
+    }
+    header i{
+        display: none;
+    }
+    .header-background{
+        width: 40%;
+        margin-left: 25%;
+    }
+    .text-container{
+        padding-top: 20%;
+    }
+    .header-text{
+        line-height: 30px;
+    }
 }
 
 

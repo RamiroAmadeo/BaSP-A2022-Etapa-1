@@ -3,6 +3,17 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
+h1{
+    font-size: 35px;
+    font-weight: 700;
+    border-bottom: 2px solid #aace9b;
+}
 .father{
     display: flex;
 }
@@ -15,17 +26,16 @@ i:hover{
 main a:hover{
     color: #f13312;
 }
-a{
-    text-decoration: none;
-}
-a:visited{
-    color: #373867;
+@media screen and (min-width: 480px){
+    h1{
+        font-size: 40px;
+    }
 }
 @media screen and (min-width: 1024px){
-main, form, footer{
-    margin-left: 150px;
-}
-aside a:hover{
-    color: #373867;
-}
+    main, form, footer{
+        margin-left: 150px;
+    }
+    aside a:hover{
+        color: #373867;
+    }
 }

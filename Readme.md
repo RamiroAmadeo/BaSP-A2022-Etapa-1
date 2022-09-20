@@ -27,7 +27,7 @@ The company GigaTech Software Solutions SA provides software development service
 ### Week 04
 > In this week we start learning about programming in JavaScript.
 
-# Git hub pages
+# Github Pages
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
 

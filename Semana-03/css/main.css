@@ -38,8 +38,8 @@ main section h2{
     font-size: 15px;
 }
 .choose-us-img{
-    width: 70%;
-    height: 200px;
+    width: 60%;
+    height: auto;
 }
 .choose-us-two{
     display: flex;
@@ -78,120 +78,119 @@ main section h2{
     height: 110px;
     margin-right: 10px;
 }
-@media screen and (min-width: 768px){
-main section h2{
-    font-size: 27px;
-    margin-top: 05%;
-}
-.box-1{
-    font-size: 18px;
-    line-height: 25px;
-}
-.box-2{
-    font-size: 16px;
-    line-height: 25px;
-}
+@media screen and (min-width: 480px){
+    main section h2{
+        font-size: 27px;
+        margin-top: 05%;
+    }
+    .box-1{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .box-2{
+        font-size: 16px;
+        line-height: 25px;
+    }
 /*  WHY CHOOSE US*/
-.choose-us-one{
-    flex-direction: row-reverse;
-    padding-left: 5px;
-}
-.choose-us-one h3{
-    text-align: left;
-    font-size: 25px;
-    border-bottom: 4px solid #286276;
-}
-.choose-us-one p{
-    width: 90%;
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: left;
-}
-.choose-us-img{
-    margin-top: 05%;
-    margin-bottom: 05%;
-    margin-right: 02%;
-    height: 250px;
-}
-.choose-us-two{
-    flex-direction: row;
-}
-.choose-us-two h3{
-    text-align: left;
-    font-size: 25px;
-    border-bottom: 4px solid #ffffff
-}
-.choose-us-two p{
-    width: 90%;
-    margin-top: 20px;
-    margin-right: 5px;
-    text-align: left;
-    font-size: 20px;
-}
+    .choose-us-one{
+        flex-direction: row-reverse;
+        padding-left: 5px;
+    }
+    .choose-us-one h3{
+        text-align: left;
+        font-size: 25px;
+        border-bottom: 4px solid #286276;
+    }
+    .choose-us-one p{
+        width: 90%;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: left;
+    }
+    .choose-us-img{
+        margin-top: 05%;
+        margin-bottom: 05%;
+        margin-right: 02%;
+    }
+    .choose-us-two{
+        flex-direction: row;
+    }
+    .choose-us-two h3{
+        text-align: left;
+        font-size: 25px;
+        border-bottom: 4px solid #ffffff
+    }
+    .choose-us-two p{
+        width: 90%;
+        margin-top: 20px;
+        margin-right: 5px;
+        text-align: left;
+        font-size: 20px;
+    }
 /*FUNCIONALITIES*/
-.funcionalities{
-    width: 47%;
-}
-.deck{
-    margin-left: 10px;
-}
-.block{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    width: 100%;
-}
+    .funcionalities{
+        width: 47%;
+    }
+    .deck{
+        margin-left: 10px;
+    }
+    .block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
 
-.funcionalities h3{
-    font-size: 25px;
-}
-.funcionalities p{
-    font-size: 20px;
-}
-.funcionalities img{
-    width: 125px;
-    height: 125px;
-}
+    .funcionalities h3{
+        font-size: 25px;
+    }
+    .funcionalities p{
+        font-size: 20px;
+    }
+    .funcionalities img{
+        width: 125px;
+        height: 125px;
+    }
 }
 @media screen and (min-width: 1024px){
-main{
-    margin-left: 150px;
-}
-main section h2{
-    font-size: 30px;
-}
-.box-1{
-    font-size: 20px;
-    line-height: 30px;
-}
-.box-2{
-    font-size: 18px;
-    line-height: 30px;
-}
-/*WHY CHOOSE US*/
-.choose-us-one h3{
-    font-size: 30px;
-}
-.choose-us-one p{
-    font-size: 25px;
-}
-.choose-us-img{
-    width: 500px;
-    height: 400px;
-}
-.choose-us-two h3{
-    font-size: 30px;
-}
-.choose-us-two p{
-    font-size: 25px;
-}
-.text-one{
-    margin-bottom: 60px;
-    padding-left: 20px;
-}
-.text-two{
-    margin-bottom: 60px;
-}
+    main{
+        margin-left: 150px;
+    }
+    main section h2{
+        font-size: 30px;
+    }
+    .box-1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .box-2{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    /*WHY CHOOSE US*/
+    .choose-us-one h3{
+        font-size: 30px;
+    }
+    .choose-us-one p{
+        font-size: 25px;
+    }
+    .choose-us-img{
+        width: 500px;
+        height: 400px;
+    }
+    .choose-us-two h3{
+        font-size: 30px;
+    }
+    .choose-us-two p{
+        font-size: 25px;
+    }
+    .text-one{
+        margin-bottom: 60px;
+        padding-left: 20px;
+    }
+    .text-two{
+        margin-bottom: 60px;
+    }
 }

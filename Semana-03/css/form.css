@@ -32,7 +32,6 @@ form h2{
     color: #373867;
 }
 .my-form select{
-    margin-top: 5px;
     width: 340px;
     height: 34px;
     border-color: #373867;
@@ -65,65 +64,64 @@ form h2{
     height: 30px;
     background-color: #f13312;
 }
-@media screen and (min-width: 768px){
-.my-form{
-    display: flex;
-    margin-left: 05%;
-    margin-right: 05%;
-}
-.my-form div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.my-form div div{
-    display: block;
-}
-.my-form label{
-    text-align: left;
-}
-.b{
-    order: 2;
-}
-.c{
-    order: 1;
-}
-.message{
-    width: 100%;
-}
-.my-form select{
-    margin-top: 27px;
-    align-self: flex-start;
-}
-.my-form textarea{
-    width: 100%;
-    height: 80px;
-}
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.button-one{
-    margin-left: 05%;
-}
-.button-two{
-    margin-right: 05%;
-}
+@media screen and (min-width: 480px){
+    .my-form{
+        display: flex;
+        margin-left: 05%;
+        margin-right: 05%;
+    }
+    .my-form div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .my-form div div{
+        display: block;
+    }
+    .my-form label{
+        text-align: left;
+    }
+    .b{
+        order: 2;
+    }
+    .c{
+        order: 1;
+    }
+    .message{
+        width: 100%;
+    }
+    .my-form select{
+        align-self: flex-start;
+    }
+    .my-form textarea{
+        width: 100%;
+        height: 80px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .button-one{
+        margin-left: 05%;
+    }
+    .button-two{
+        margin-right: 05%;
+    }
 }
 @media screen and (min-width: 1293px) and (max-width: 1920px){
-.my-form input[type="text"]{
-    width: 400px;
-}
-.my-form select{
-    width: 400px;
-}
-}
+    .my-form input[type="text"]{
+        width: 400px;
+    }
+    .my-form select{
+        width: 400px;
+    }
+    }
 @media screen and (min-width: 1493px) and (max-width: 1920px){
-.my-form input[type="text"]{
-    width: 600px;
-}
-.my-form select{
-    width: 600px;
-}
+    .my-form input[type="text"]{
+        width: 600px;
+    }
+    .my-form select{
+        width: 600px;
+    }
 }

@@ -14,7 +14,7 @@ console.log('-Ejercicio 1.b');
 
 var wordA = 'Hellow';
 var wordB = 'Everyone';
-var resultB = wordA + ' ' + wordB;
+var resultB = wordA + wordB;
 
 console.log(resultB);
 
