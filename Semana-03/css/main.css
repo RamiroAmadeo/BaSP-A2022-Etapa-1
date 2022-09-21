@@ -7,8 +7,8 @@
 }
 .we-are-down-text{
     margin: 5px;
-    text-align: center;
     padding-top: 10px;
+    text-align: center;
     color: #49a37b;
     font-size: 13px;
     line-height: 20px;
@@ -23,12 +23,16 @@
     width: 100%;
     margin-top: 02%;
     text-align: center;
-    font-size: 18px;
     border-bottom: 2px solid #286276;
 }
 .choose-us-right p{
     width: 100%;
     text-align: center;
+}
+.choose-us-right h4, .funcionalities h4, .choose-us-left h4{
+    font-size: 18px;
+}
+.choose-us-left p, .choose-us-right p, .funcionalities p{
     font-size: 15px;
 }
 .choose-us-img{
@@ -44,13 +48,11 @@
 .choose-us-left h4{
     margin-top: 02%;
     text-align: center;
-    font-size: 18px;
     border-bottom: 2px solid #ffffff;
 }
 .choose-us-left p{
     width: 100%;
     text-align: center;
-    font-size: 15px;
 }
 /* FUNCIONALITIES */
 .funcionalities{
@@ -60,11 +62,9 @@
     margin-bottom: 10px;
 }
 .funcionalities h4{
-    font-size: 18px;
     margin-bottom: 02%;
 }
 .funcionalities p{
-    font-size: 15px;
     width: 100%;
 }
 
@@ -72,111 +72,6 @@
     width: 100%;
     height: auto;
     margin-right: 10px;
-}
-@media screen and (min-width: 480px){
-    .we-are-text{
-        font-size: 18px;
-        line-height: 25px;
-    }
-    .we-are-down-text{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    /*WHY CHOOSE US*/
-    .choose-us-right{
-        flex-direction: row-reverse;
-        padding-left: 5px;
-    }
-    .choose-us-right h4{
-        text-align: left;
-        font-size: 25px;
-        border-bottom: 4px solid #286276;
-    }
-    .choose-us-right p{
-        width: 90%;
-        margin-top: 20px;
-        font-size: 20px;
-        text-align: left;
-    }
-    .choose-us-img{
-        margin-top: 05%;
-        margin-bottom: 05%;
-        margin-right: 02%;
-    }
-    .choose-us-left{
-        flex-direction: row;
-    }
-    .choose-us-left h4{
-        text-align: left;
-        font-size: 25px;
-        border-bottom: 4px solid #ffffff
-    }
-    .choose-us-left p{
-        width: 90%;
-        margin-top: 20px;
-        margin-right: 5px;
-        text-align: left;
-        font-size: 20px;
-    }
-    /*FUNCIONALITIES*/
-    .funcionalities{
-        width: 46%;
-    }
-    .funcionalities-h-p{
-        margin-left: 10px;
-        width: 70%;
-    }
-    .funcionalities-block{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        width: 100%;
-    }
-    .funcionalities h4{
-        font-size: 25px;
-    }
-    .funcionalities p{
-        font-size: 20px;
-    }
-    .funcionalities img{
-        width: 100%;
-        height: auto;
-    }
-}
-@media screen and (min-width: 1024px){
-    main{
-        margin-left: 150px;
-    }
-    .we-are-text{
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .we-are-down-text{
-        font-size: 18px;
-        line-height: 30px;
-    }
-    /*WHY CHOOSE US*/
-    .choose-us-right h4{
-        font-size: 30px;
-    }
-    .choose-us-right p{
-        font-size: 25px;
-    }
-    .choose-us-left h4{
-        font-size: 30px;
-    }
-    .choose-us-left p{
-        font-size: 25px;
-    }
-    .text-right{
-        margin-bottom: 60px;
-        padding-left: 20px;
-    }
-    .text-left{
-        margin-bottom: 60px;
-    }
 }
 /*LISTS*/
 .lists{
@@ -198,11 +93,104 @@
     color: #f13312;
 }
 @media screen and (min-width: 480px){
+    .we-are-text{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .we-are-down-text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /*WHY CHOOSE US*/
+    .choose-us-right{
+        flex-direction: row-reverse;
+        padding-left: 5px;
+    }
+    .choose-us-right h4{
+        text-align: left;
+        border-bottom: 4px solid #286276;
+    }
+    .choose-us-right p{
+        width: 90%;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .choose-us-img{
+        margin-top: 05%;
+        margin-bottom: 05%;
+        margin-right: 02%;
+    }
+    .choose-us-right h4, .funcionalities h4, .choose-us-left h4{
+        font-size: 25px;
+    }
+    .choose-us-left p, .choose-us-right p, .funcionalities p{
+        font-size: 20px;
+    }
+    .choose-us-left{
+        flex-direction: row;
+    }
+    .choose-us-left h4{
+        text-align: left;
+        border-bottom: 4px solid #ffffff
+    }
+    .choose-us-left p{
+        width: 90%;
+        margin-top: 20px;
+        margin-right: 5px;
+        text-align: left;
+    }
+    /*FUNCIONALITIES*/
+    .funcionalities{
+        width: 46%;
+    }
+    .funcionalities-h-p{
+        margin-left: 10px;
+        width: 70%;
+    }
+    .funcionalities-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .funcionalities img{
+        width: 100%;
+        height: auto;
+    }
+    /*LISTS*/
     .lists h4{
         font-size: 18px;
     }
 }
 @media screen and (min-width: 1024px){
+    main{
+        margin-left: 150px;
+    }
+    .we-are-text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .we-are-down-text{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    /*WHY CHOOSE US*/
+    .choose-us-right h4, .choose-us-left h4 {
+        font-size: 30px;
+    }
+    .choose-us-left p, .choose-us-right p{
+        font-size: 25px;
+    }
+    .text-right{
+        margin-bottom: 60px;
+        padding-left: 20px;
+    }
+    .text-left{
+        margin-bottom: 60px;
+    }
+    /*LISTS*/
     .lists{
         margin-left: 100px;
     }
