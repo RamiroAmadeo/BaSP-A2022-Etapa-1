@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../javascript/login.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -34,21 +35,23 @@
                 <h1>Login</h1>
             </div>
         </header>
-        <div class="container-login">
-            <main>
+        <main>
+            <div class="container-login">
                 <form class="my-form-login">
                     <div>
                         <label>E-mail</label>
-                        <input type="text" placeholder="Your e-mail here">
+                        <input id="email" type="text" placeholder="Your e-mail here">
+                        <div id="error-email"></div>
                         <label>Password</label>
-                        <input type="text" placeholder="Your password here">
+                        <input id="password" type="password" placeholder="Your password here">
+                        <div id="password-error"></div>
                     </div>
                     <div class="button-login-container">
                         <button type="submit" class="button-login">Login</button>
                     </div>
                 </form>
-            </main>
-        </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
