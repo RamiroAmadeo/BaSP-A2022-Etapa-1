@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../javascript/employee-sign-up.js"></script>
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>employee-sign up</title>
 </head>
 <body>
@@ -23,38 +27,63 @@
             </nav>
         </div>
     </aside>
-    <div class="father"></div>
+    <div class="father">
         <header>
             <h1>Sign up</h1>
         </header>
         <main>
-            <form>
+            <form class="my-form-sign-up">
                 <div>
-                    <label>Name</label>
-                    <input type="text" placeholder="">
-                    <label>Last name</label>
-                    <input type="text" placeholder="">
-                    <label>D.N.I</label>
-                    <input type="text" placeholder="">
-                    <label>Date of birth</label>
-                    <input type="text" placeholder="">
-                    <label>Phone</label>
-                    <input type="text" placeholder="">
-                    <label>Adress</label>
-                    <input type="text" placeholder="">
-                    <label>Locality</label>
-                    <input type="text" placeholder="">
-                    <label>Postal code</label>
-                    <input type="text" placeholder="">
-                    <label>E-mail</label>
-                    <input type="text" placeholder="">
-                    <label>Password</label>
-                    <input type="text" placeholder="Your password here">
-                    <label>Repeat password</label>
-                    <input type="text" placeholder="">
+                    <div class="sign-up">
+                        <label>Name</label>
+                        <input id="input-name" type="text" placeholder="">
+                        <div id="message"></div>
+                    </div>
+                    <div class="sign-up">
+                        <label>Last name</label>
+                        <input id="last-name" type="text" placeholder="">
+                        <div id="message-error-last-name"></div>
+                    </div>
+                    <div class="sign-up">
+                        <label>D.N.I</label>
+                        <input id="dni" type="text" placeholder="">
+                        <div id="error-dni"></div>
+                    </div>
+                    <div class="sign-up">
+                        <label>Date of birth</label>
+                        <input type="date" placeholder="">
+                    </div>
+                    <div class="sign-up">
+                        <label>Phone</label>
+                        <input id="phone" type="number" placeholder="">
+                        <div id="phone-error"></div>
+                    </div>
+                    <div class="sign-up">
+                        <label>Adress</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="sign-up">
+                        <label>Locality</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="sign-up">
+                        <label>Postal code</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="sign-up">
+                        <label>E-mail</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="sign-up">
+                        <label>Password</label>
+                        <input type="text" placeholder="Your password here">
+                    <div class="sign-up">
+                        <label>Repeat password</label>
+                        <input type="text" placeholder="">
+                    </div>
                 </div>
                 <div>
-                    <button>Create</button>
+                    <button type="submit" class="button-sign-up">Create</button>
                 </div>
             </form>
         </main>
