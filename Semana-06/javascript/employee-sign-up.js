@@ -7,9 +7,19 @@ window.onload = function() {
     var dni = document.getElementById ("dni");
     var errorDni = document.getElementById("error-dni");
     var phone = document.getElementById("phone");
-    var errorPhone = document.getElementById("phone-error")
-    var nameCondition = "name"
-    var lastNameCondition = "lastname"
+    var errorPhone = document.getElementById("phone-error");
+    var nameCondition = "name";
+    var lastNameCondition = "lastname";
+    var adress = document.getElementById("adress");
+    var locality = document.getElementById("locality");
+    var errorLocality = document.getElementById("error-locality");
+    var email = document.getElementById("email");
+    var errorEmail = document.getElementById("error-email");
+    var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    var password = document.getElementById("password");
+    var errorPassword = document.getElementById ("password-error");
+    var repeatPassword = document.getElementById("password-repeat");
+    var repeatPasswordError = document.getElementById("repeat-password-error");
 
 
     function threeLetters (nameValue, input, errorDiv, condition){
@@ -117,6 +127,195 @@ window.onload = function() {
         }
         phone.classList.remove("green-background-input");
     }
+
+    //ADRESS
+
+    adress.onblur = function (e){
+        adressValue = e.target.value;
+        if(adressValue.length >= 5){
+            for (var i=0; i < adressValue.length; i++) {
+                /* if((((adressValue.charCodeAt(i) >= 97) && (adressValue.charCodeAt(i) <= 122))==false)&&(((adressValue.charCodeAt(i) >= 48)
+                &&((adressValue.charCodeAt(i) <= 57)))==false)&&((((adressValue.charCodeAt(i) >= 65)&&(adressValue.charCodeAt(i) <= 90)))==false)
+                &&(adressValue.charCodeAt(i)==32)==false){
+                    console.log("hola")
+                }else{
+                    console.log("hola2")
+                } */
+                if ((((adressValue.charCodeAt(i)>=48) && (adressValue.charCodeAt(i)<=57))
+                && ((adressValue.charCodeAt(i)>=65) && (adressValue.charCodeAt(i)<=90))
+                && ((adressValue.charCodeAt(i)>=97) && (adressValue.charCodeAt(i)<=122)))
+                && (adressValue.charCodeAt(i)==32)){
+                    console.log("hola")
+                    return adress.classList.add("green-background-input");
+                }else{
+                    console.log("hola2");
+                }
+            }
+        }
+    }
+
+    //LOCALITY
+
+ /*    var numbers = "0123456789";
+    var letters = "abcdefghyjklmnñopqrstuvwxyz";
+
+    function hasNumbers (text){
+        for(i=0; i<text.length; i++){
+           if (numbers.indexOf(text.charAt(i),0)!=-1){
+              return 1;
+           }
+        }
+        return 0;
+     }
+
+     function hasLetters(texto){
+        texto = texto.toLowerCase();
+        for(i=0; i<texto.length; i++){
+           if (letters.indexOf(texto.charAt(i),0)!=-1){
+              return 1;
+           }
+        }
+        return 0;
+     }
+    locality.onblur = function (){
+        if (locality.length > 3){
+            hasLetters(text)
+            hasNumbers(texto)
+        }
+    } */
+
+    // EMAIL
+
+    email.onfocus = function() {
+        email.removeAttribute("placeholder")
+        if(document.getElementById("email-error-id")){
+            errorEmail.removeChild(document.getElementById("email-error-id"))
+        }
+    }
+
+    email.onblur = function (e) {
+        console.log(e);
+        if(e.target.value == ""){
+            errorEmail.innerHTML = "<p id='email-error-id' class='error'> Please enter your e-mail</p>"
+        }
+        if(!emailExpression.test(e.target.value)){
+            errorEmail.innerHTML = "<p id = 'email-error-id' class = 'error'> Please enter an valid e-mail</p>"
+        }else{
+            email.classList.add("green-background-input");
+        }
+    }
+
+    //PASSWORD
+
+    password.onfocus = function(e) {
+        password.removeAttribute("placeholder")
+        if(document.getElementById("password-error-id")){
+            errorPassword.removeChild(document.getElementById("password-error-id"))
+        }
+    }
+
+    password.onblur = function(e){
+        var invalid = false;
+        var passwordValue = e.target.value.trim();
+        if(passwordValue == ""){
+            errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Please enter your password</p>"
+        }else{
+            for(var i = 0; i < passwordValue.length; i++){
+            if((((passwordValue.charCodeAt(i) >= 97) && (passwordValue.charCodeAt(i) <= 122))==false)&&(((passwordValue.charCodeAt(i) >= 48)
+            &&((passwordValue.charCodeAt(i) <= 57)))==false)&&((((passwordValue.charCodeAt(i) >= 65)&&(passwordValue.charCodeAt(i) <= 90)))==false)
+            ||(passwordValue.charCodeAt(i)==32)){
+                invalid = true
+            }
+        }
+        if (invalid || passwordValue.length<8){
+            errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+            }
+        }
+    }
+
+    //REPEAT PASSWORD
+
+    repeatPassword.onfocus = function(e) {
+        repeatPassword.removeAttribute("placeholder")
+        if(document.getElementById("repeat-password-error-id")){
+            repeatPasswordError.removeChild(document.getElementById("repeat-password-error-id"))
+        }
+    }
+
+    repeatPassword.onblur = function(e){
+        var invalid = false;
+        var repeatPasswordValue = e.target.value.trim();
+        if(repeatPasswordValue == ""){
+            repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Please enter your password</p>"
+        }else{
+            for(var i = 0; i < repeatPasswordValue.length; i++){
+            if((((repeatPasswordValue.charCodeAt(i) >= 97) && (repeatPasswordValue.charCodeAt(i) <= 122))==false)&&(((repeatPasswordValue.charCodeAt(i) >= 48)
+            &&((repeatPasswordValue.charCodeAt(i) <= 57)))==false)&&((((repeatPasswordValue.charCodeAt(i) >= 65)&&(repeatPasswordValue.charCodeAt(i) <= 90)))==false)
+            ||(repeatPasswordValue.charCodeAt(i)==32)){
+                invalid = true
+            }
+        }
+        if (invalid || repeatPasswordValue.length<8){
+            repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* locality.onblur = function (e){
+        localityValue = e.target.value;
+        if(localityValue == ""){
+            errorLocality.innerHTML = "<p id='error-locality' class='error'>Please complete the field</p>";
+            return false;
+        }else if(localityValue.length<3){
+            errorLocality.innerHTML = "<p id='error-locality' class='error'>Minimum of three letters</p>";
+        }else{
+            for (i=0; i < localityValue.length; i++){
+                if (((localityValue.charCodeAt(i)>=48) && (localityValue.charCodeAt(i)<=57))
+                && ((localityValue.charCodeAt(i)>=97) && (localityValue.charCodeAt(i)<=122))) {
+                        return console.log("buenas");
+                    }
+            }
+        } */
+        /* if(localityValue.length > 3){
+            for (i=0; i < localityValue.length; i++){
+                if (((localityValue.charCodeAt(i)>=48) && (localityValue.charCodeAt(i)<=57))
+                    && ((localityValue.charCodeAt(i)>=65) && (localityValue.charCodeAt(i)<=90))
+                    && ((localityValue.charCodeAt(i)>=97) && (localityValue.charCodeAt(i)<=122))){
+                        return console.log("bunas");
+                    }
+            }
+        } */
 
 
 

@@ -40,7 +40,6 @@ window.onload = function () {
         var invalid = false;
         var passwordValue = e.target.value.trim();
         if(passwordValue == ""){
-            console.log("1")
             errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Please enter your password </p>"
         }else{
             for(var i = 0; i < passwordValue.length; i++){
