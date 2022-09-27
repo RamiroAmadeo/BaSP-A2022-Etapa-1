@@ -13,6 +13,8 @@ window.onload = function() {
     var adress = document.getElementById("adress");
     var locality = document.getElementById("locality");
     var errorLocality = document.getElementById("error-locality");
+    var postalCode = document.getElementById("postal-code");
+    var postalCodeError = document.getElementById("postal-code-error")
     var email = document.getElementById("email");
     var errorEmail = document.getElementById("error-email");
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
@@ -184,6 +186,31 @@ window.onload = function() {
         }
     } */
 
+    //POSTAL CODE
+    postalCode.onfocus = function (){
+        if(document.getElementById("postal-message-error")){
+            postalCodeError.removeChild(document.getElementById("postal-message-error"));
+        }
+        postalCode.classList.remove("green-background-input");
+    }
+
+    postalCode.onblur = function (e){
+        var postalCodeValue = e.target.value;
+        if ((postalCodeValue.length>=4) && (postalCodeValue.length<=5)){
+            for (i=0; i < postalCodeValue.length; i++){
+                if  ((postalCodeValue.charCodeAt(i)>=48) && (postalCodeValue.charCodeAt(i)<=57)){
+                        postalCode.classList.add("green-background-input")
+                }else{
+                    postalCodeError.innerHTML = "<p id='postal-message-error' class='error'>Only numbers</p>"
+                }
+            }
+        }else if (postalCodeValue.length == ""){
+            postalCodeError.innerHTML = "<p id='postal-message-error' class='error'>Please complete the field</p>"
+        }else{
+            postalCodeError.innerHTML = "<p id='postal-message-error' class='error'>Only four or five numbers</p>"
+        }
+    }
+
     // EMAIL
 
     email.onfocus = function() {
@@ -194,7 +221,6 @@ window.onload = function() {
     }
 
     email.onblur = function (e) {
-        console.log(e);
         if(e.target.value == ""){
             errorEmail.innerHTML = "<p id='email-error-id' class='error'> Please enter your e-mail</p>"
         }
