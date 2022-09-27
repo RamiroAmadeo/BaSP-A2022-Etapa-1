@@ -100,19 +100,22 @@ window.onload = function() {
         if (phoneValue.length == 10){
             for (i=0; i < phoneValue; i++){
                 if ((phoneValue.charCodeAt(i)>=48) && (phoneValue.charCodeAt(i)<=57)){
-                    return alert ("correct");
+                    return phone.classList.add("green-background-input");
                 }
             }
         }else{
-            errorPhone.innerHTML = "<p id='phone-error-message'class='error'> More or less of ten </p>"
+            errorPhone.innerHTML = "<p id='phone-error-message'class='error'> Only ten numbers </p>"
+        }
+        if (phoneValue == ""){
+            errorPhone.innerHTML = "<p id='phone-error-message'class='error'> Please complete the field</p>"
         }
     }
 
     phone.onfocus = function (){
         if(document.getElementById("phone-error-message")){
-            console.log("hola");
             errorPhone.removeChild(document.getElementById("phone-error-message"));
         }
+        phone.classList.remove("green-background-input");
     }
 
 
