@@ -50,7 +50,6 @@ window.onload = function () {
             }
         }
         if (invalid || passwordValue.length<8){
-            console.log("w")
             errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
         }else{
             pra = passwordValue;

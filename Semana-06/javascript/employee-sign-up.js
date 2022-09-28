@@ -158,33 +158,40 @@ window.onload = function() {
 
     //LOCALITY
 
- /*    var numbers = "0123456789";
-    var letters = "abcdefghyjklmnñopqrstuvwxyz";
+    locality.onblur = function (e){
+        localityValue = e.target.value;
+        var letterMinusq = false
+        var numbers = false
+        var letterMayusq = false
 
-    function hasNumbers (text){
-        for(i=0; i<text.length; i++){
-           if (numbers.indexOf(text.charAt(i),0)!=-1){
-              return 1;
-           }
+        if (localityValue.length > 3){
+            for (i=0; i < localityValue.length; i++){
+                if((localityValue.charCodeAt(i) >= 97) && (localityValue.charCodeAt(i) <= 122)){
+                    letterMinusq = true;
+                }else if((localityValue.charCodeAt(i)>=48) && (localityValue.charCodeAt(i)<=57)){
+                    numbers = true;
+                }else if ((localityValue.charCodeAt(i)>=65) && (localityValue.charCodeAt(i)<=90)){
+                    letterMayusq = true;
+                }
+            }
+            if(letterMinusq==false || numbers==false || letterMayusq==false){
+                errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Error</p>"
+            }
+            if (letterMinusq==true && numbers==true && letterMayusq==true){
+                locality.classList.add("green-background-input")
+            }
+        }else if (localityValue.length == ""){
+            errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Please complete the field</p>"
+        }else{
+            errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Please more of characters</p>"
         }
-        return 0;
-     }
-
-     function hasLetters(texto){
-        texto = texto.toLowerCase();
-        for(i=0; i<texto.length; i++){
-           if (letters.indexOf(texto.charAt(i),0)!=-1){
-              return 1;
-           }
+    }
+    locality.onfocus = function (){
+        if(document.getElementById("locality-error-message")){
+            errorLocality.removeChild(document.getElementById("locality-error-message"));
         }
-        return 0;
-     }
-    locality.onblur = function (){
-        if (locality.length > 3){
-            hasLetters(text)
-            hasNumbers(texto)
-        }
-    } */
+        locality.classList.remove("green-background-input");
+    }
 
     //POSTAL CODE
     postalCode.onfocus = function (){
