@@ -4,7 +4,10 @@ window.onload = function () {
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var password = document.getElementById("password");
     var errorPassword = document.getElementById ("password-error");
-    var login = document.getElementsByClassName("button-login");
+    var login = document.getElementById("login");
+
+    var passwordInfo = "";
+    var emailInfo = "";
 
     //E-MAIL//
 
@@ -24,6 +27,7 @@ window.onload = function () {
             errorEmail.innerHTML = "<p id = 'email-error-id' class = 'error'> Please enter an valid e-mail</p>"
         }else{
             email.classList.add("green-background-input");
+            emailInfo = e.target.value;
         }
     }
 
@@ -35,7 +39,6 @@ window.onload = function () {
             errorPassword.removeChild(document.getElementById("password-error-id"))
         }
     }
-    var pra = "";
     password.onblur = function(e){
         var invalid = false;
         var passwordValue = e.target.value.trim();
@@ -47,21 +50,18 @@ window.onload = function () {
             &&((passwordValue.charCodeAt(i) <= 57)))==false)&&((((passwordValue.charCodeAt(i) >= 65)&&(passwordValue.charCodeAt(i) <= 90)))==false)
             ||(passwordValue.charCodeAt(i)==32)){
                 invalid = true
+                }
+            }
+            if (invalid || passwordValue.length<8){
+                errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+            }else{
+                password.classList.add("green-background-input")
+                passwordInfo = e.target.value;
             }
         }
-        if (invalid || passwordValue.length<8){
-            errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
-        }else{
-            pra = passwordValue;
-        }}
     }
-    login[0].onclick = function (e){
-        e.preventDefault ();
-        if  (pra != ""){
-            alert (pra);
-            console.log (pra);
-        }else{
-            alert ("completa los campos");
-        }
+    login.onclick = function (e){
+        e.preventDefault();
+        alert (emailInfo +" "+ passwordInfo);
     }
 }

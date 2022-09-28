@@ -23,6 +23,20 @@ window.onload = function() {
     var errorPassword = document.getElementById ("password-error");
     var repeatPassword = document.getElementById("password-repeat");
     var repeatPasswordError = document.getElementById("repeat-password-error");
+    var button = document.getElementById("create");
+    var date = document.getElementById("date");
+
+    var nameInfo = "";
+    var lastNameInfo = "";
+    var dniInfo = "";
+    var phoneInfo = "";
+    var adressInfo = "";
+    var localityInfo = "";
+    var postalCodeInfo = "";
+    var emailInfo = "";
+    var passwordInfo = "";
+    var passwordRepeatInfo = "";
+    var dateInfo = "";
 
 
     function threeLetters (nameValue, input, errorDiv, condition){
@@ -55,6 +69,7 @@ window.onload = function() {
             error.innerHTML = "<p id='message-error' class='error'>Minimum of three letters</p>";
         }else{
         threeLetters(nameValue, name, error, nameCondition);
+        nameInfo = e.target.value;
         }
     }
         lastName.onfocus = function (e){
@@ -75,6 +90,7 @@ window.onload = function() {
             errorLast.innerHTML = "<p id='message-error-last' class='error'>Minimum of three letters</p>";
         }else{
             threeLetters (lastNameValue, lastName,errorLast, lastNameCondition);
+            lastNameInfo = e.target.value;
         }
     }
 
@@ -85,7 +101,8 @@ window.onload = function() {
         if(dniValue.length>=7){
             for(i=0; i < dniValue.length; i++){
                 if ((dniValue.charCodeAt(i)>=48) && (dniValue.charCodeAt(i)<=57)||(dniValue.charCodeAt(i)==32)){
-                    return dni.classList.add("green-background-input");
+                    dni.classList.add("green-background-input");
+                    dniInfo = e.target.value;
                 }else{
                     errorDni.innerHTML = "<p id= 'error-dni-message' class='error'>Only numbers</p>"
                     break
@@ -106,6 +123,13 @@ window.onload = function() {
         dni.classList.remove("green-background-input");
     }
 
+    //DATE OF BIRTH
+    date.onblur = function (e){
+        console.log(e.target.value)
+
+    }
+
+
     //PHONE
 
     phone.onblur = function (e){
@@ -113,7 +137,9 @@ window.onload = function() {
         if (phoneValue.length == 10){
             for (i=0; i < phoneValue; i++){
                 if ((phoneValue.charCodeAt(i)>=48) && (phoneValue.charCodeAt(i)<=57)){
-                    return phone.classList.add("green-background-input");
+                    phone.classList.add("green-background-input");
+                    phoneInfo = e.target.value;
+                    return false
                 }
             }
         }else{
@@ -157,6 +183,7 @@ window.onload = function() {
             }
             if (letterMinusq==true && numbers==true && letterMayusq==true && space==true){
                 adress.classList.add("green-background-input")
+                adressInfo = e.target.value;
             }
         }else if (adressValue.length == ""){
             adressError.innerHTML = "<p id= 'adress-error-message' class= 'error'>Error</p>"
@@ -195,6 +222,7 @@ window.onload = function() {
             }
             if (letterMinusq==true && numbers==true && letterMayusq==true){
                 locality.classList.add("green-background-input")
+                localityInfo = e.target.value;
             }
         }else if (localityValue.length == ""){
             errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Please complete the field</p>"
@@ -223,6 +251,7 @@ window.onload = function() {
             for (i=0; i < postalCodeValue.length; i++){
                 if  ((postalCodeValue.charCodeAt(i)>=48) && (postalCodeValue.charCodeAt(i)<=57)){
                         postalCode.classList.add("green-background-input")
+                        postalCodeInfo = e.target.value;
                 }else{
                     postalCodeError.innerHTML = "<p id='postal-message-error' class='error'>Only numbers</p>"
                 }
@@ -251,6 +280,7 @@ window.onload = function() {
             errorEmail.innerHTML = "<p id = 'email-error-id' class = 'error'> Please enter an valid e-mail</p>"
         }else{
             email.classList.add("green-background-input");
+            emailInfo = e.target.value;
         }
     }
 
@@ -274,11 +304,14 @@ window.onload = function() {
             &&((passwordValue.charCodeAt(i) <= 57)))==false)&&((((passwordValue.charCodeAt(i) >= 65)&&(passwordValue.charCodeAt(i) <= 90)))==false)
             ||(passwordValue.charCodeAt(i)==32)){
                 invalid = true
+                }
             }
-        }
-        if (invalid || passwordValue.length<8){
-            errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
-            }
+            if (invalid || passwordValue.length<8){
+                errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+                }else{
+                    password.classList.add("green-background-input")
+                    passwordInfo = e.target.value;
+                }
         }
     }
 
@@ -302,150 +335,19 @@ window.onload = function() {
             &&((repeatPasswordValue.charCodeAt(i) <= 57)))==false)&&((((repeatPasswordValue.charCodeAt(i) >= 65)&&(repeatPasswordValue.charCodeAt(i) <= 90)))==false)
             ||(repeatPasswordValue.charCodeAt(i)==32)){
                 invalid = true
+                }
             }
-        }
-        if (invalid || repeatPasswordValue.length<8){
-            repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+            if (invalid || repeatPasswordValue.length<8){
+                repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+            }else{
+                repeatPassword.classList.add("green-background-input")
+                passwordRepeatInfo = e.target.value;
             }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /* locality.onblur = function (e){
-        localityValue = e.target.value;
-        if(localityValue == ""){
-            errorLocality.innerHTML = "<p id='error-locality' class='error'>Please complete the field</p>";
-            return false;
-        }else if(localityValue.length<3){
-            errorLocality.innerHTML = "<p id='error-locality' class='error'>Minimum of three letters</p>";
-        }else{
-            for (i=0; i < localityValue.length; i++){
-                if (((localityValue.charCodeAt(i)>=48) && (localityValue.charCodeAt(i)<=57))
-                && ((localityValue.charCodeAt(i)>=97) && (localityValue.charCodeAt(i)<=122))) {
-                        return console.log("buenas");
-                    }
-            }
-        } */
-        /* if(localityValue.length > 3){
-            for (i=0; i < localityValue.length; i++){
-                if (((localityValue.charCodeAt(i)>=48) && (localityValue.charCodeAt(i)<=57))
-                    && ((localityValue.charCodeAt(i)>=65) && (localityValue.charCodeAt(i)<=90))
-                    && ((localityValue.charCodeAt(i)>=97) && (localityValue.charCodeAt(i)<=122))){
-                        return console.log("bunas");
-                    }
-            }
-        } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*   function threeLetters(inputValue){
-        if(inputValue.length >= 3){
-            for (var i=0; i < inputValue.length; i++){
-                if ((inputValue.charCodeAt(i)>= 97) && (inputValue.charCodeAt(i)>=122)){
-                    invalid = true;
-                }else{
-                    invalid = false;
-                }
-            }
-        }
-    } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    button.onclick = function (e){
+        e.preventDefault();
+        alert (nameInfo +" "+ lastNameInfo+" "+ dniInfo+" "+ adressInfo+" "+ localityInfo+" "+ postalCodeInfo
+        +" "+ emailInfo+" "+ passwordInfo+" "+ passwordRepeatInfo);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
