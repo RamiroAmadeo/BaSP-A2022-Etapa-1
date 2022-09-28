@@ -1,3 +1,12 @@
+#password{
+    width: 100%;
+    height: 30px;
+    border-color: #373867;
+    border-radius: 5px;
+}
+.input-container{
+    width: 50%;
+}
 .my-form-login{
     display: flex;
     flex-direction: column;
@@ -11,7 +20,7 @@
     margin-top: 100px;
 }
 .my-form-login input[type="text"]{
-    width: 340px;
+    width: 100%;
     height: 30px;
     border-color: #373867;
     border-radius: 5px;

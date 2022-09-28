@@ -28,70 +28,53 @@
         </div>
     </aside>
     <div class="father">
-        <header>
-            <h1>Sign up</h1>
+        <header id="header-login">
+            <div id="header-login-container">
+                <h1>Sign up</h1>
+            </div>
         </header>
         <main>
-            <form class="my-form-sign-up">
-                <div>
-                    <div class="sign-up">
+            <div class="container-sign-up">
+                <form class="my-form-sign-up">
+                    <div class="input-container-employee">
                         <label>Name</label>
                         <input id="input-name" type="text" placeholder="">
                         <div id="message"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>Last name</label>
                         <input id="last-name" type="text" placeholder="">
                         <div id="message-error-last-name"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>D.N.I</label>
                         <input id="dni" type="text" placeholder="">
                         <div id="error-dni"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>Date of birth</label>
                         <input id="date" type="date" placeholder="">
-                    </div>
-                    <div class="sign-up">
                         <label>Phone</label>
                         <input id="phone" type="number" placeholder="">
                         <div id="phone-error"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>Adress</label>
                         <input id="adress" type="text" placeholder="">
                         <div id="adress-error"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>Locality</label>
                         <input id="locality" type="text" placeholder="">
                         <div id="error-locality"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>Postal code</label>
                         <input id="postal-code" type="text" placeholder="">
                         <div id="postal-code-error"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>E-mail</label>
                         <input id="email" type="text" placeholder="">
                         <div id="error-email"></div>
-                    </div>
-                    <div class="sign-up">
                         <label>Password</label>
                         <input id="password" type="password" placeholder="Your password here">
                         <div id="password-error"></div>
-                    <div class="sign-up">
                         <label>Repeat password</label>
                         <input id="password-repeat" type="password" placeholder="">
                         <div id="repeat-password-error"></div>
                     </div>
-                </div>
-                <div>
-                    <button id="create" type="submit" class="button-sign-up">Create</button>
-                </div>
-            </form>
+                    <div>
+                        <button id="create" type="submit" class="button-sign-up">Create</button>
+                    </div>
+                </form>
+            </div>
         </main>
     </div>
 </body>
