@@ -27,8 +27,12 @@ The company GigaTech Software Solutions SA provides software development service
 ### Week 04
 > In this week we start learning about programming in JavaScript.
 
+### Week 06
+> In this week we have a change of group. At the beggining was difficult to comunicate with oters but with the pass of the days it was more and more easy. On the other hand we learned how to validate fields and we reinforce what we have learned.
+
 # Github Pages
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
+## https://github.com/RamiroAmadeo/BaSP-A2022-Etapa-1/tree/master/Semana-06
 
 **_By Ramiro Amadeo_**
