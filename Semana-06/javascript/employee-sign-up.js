@@ -11,6 +11,7 @@ window.onload = function() {
     var nameCondition = "name";
     var lastNameCondition = "lastname";
     var adress = document.getElementById("adress");
+    var adressError = document.getElementById("adress-error");
     var locality = document.getElementById("locality");
     var errorLocality = document.getElementById("error-locality");
     var postalCode = document.getElementById("postal-code");
@@ -133,36 +134,51 @@ window.onload = function() {
     //ADRESS
 
     adress.onblur = function (e){
+        var letterMinusq = false;
+        var numbers = false;
+        var letterMayusq = false;
+        var space = false;
         adressValue = e.target.value;
+
         if(adressValue.length >= 5){
-            for (var i=0; i < adressValue.length; i++) {
-                /* if((((adressValue.charCodeAt(i) >= 97) && (adressValue.charCodeAt(i) <= 122))==false)&&(((adressValue.charCodeAt(i) >= 48)
-                &&((adressValue.charCodeAt(i) <= 57)))==false)&&((((adressValue.charCodeAt(i) >= 65)&&(adressValue.charCodeAt(i) <= 90)))==false)
-                &&(adressValue.charCodeAt(i)==32)==false){
-                    console.log("hola")
-                }else{
-                    console.log("hola2")
-                } */
-                if ((((adressValue.charCodeAt(i)>=48) && (adressValue.charCodeAt(i)<=57))
-                && ((adressValue.charCodeAt(i)>=65) && (adressValue.charCodeAt(i)<=90))
-                && ((adressValue.charCodeAt(i)>=97) && (adressValue.charCodeAt(i)<=122)))
-                && (adressValue.charCodeAt(i)==32)){
-                    console.log("hola")
-                    return adress.classList.add("green-background-input");
-                }else{
-                    console.log("hola2");
+            for (var i=0; i < adressValue.length; i++){
+                if((adressValue.charCodeAt(i) >= 97) && (adressValue.charCodeAt(i) <= 122)){
+                    letterMinusq = true;
+                }else if((adressValue.charCodeAt(i)>=48) && (adressValue.charCodeAt(i)<=57)){
+                    numbers = true;
+                }else if ((adressValue.charCodeAt(i)>=65) && (adressValue.charCodeAt(i)<=90)){
+                    letterMayusq = true;
+                }else if (adressValue.charCodeAt(i)==32){
+                    space = true;
                 }
             }
+            if(letterMinusq==false || numbers==false || letterMayusq==false || space ==false){
+                adressError.innerHTML = "<p id= 'adress-error-message' class= 'error'>Error</p>"
+            }
+            if (letterMinusq==true && numbers==true && letterMayusq==true && space==true){
+                adress.classList.add("green-background-input")
+            }
+        }else if (adressValue.length == ""){
+            adressError.innerHTML = "<p id= 'adress-error-message' class= 'error'>Error</p>"
+        }else{
+            adressError.innerHTML = "<p id= 'adress-error-message' class= 'error'>Five or more characters</p>"
         }
     }
+    adress.onfocus = function(){
+        if(document.getElementById("adress-error-message")){
+            adressError.removeChild(document.getElementById("adress-error-message"));
+        }
+        adress.classList.remove("green-background-input");
+    }
+
 
     //LOCALITY
 
     locality.onblur = function (e){
         localityValue = e.target.value;
-        var letterMinusq = false
-        var numbers = false
-        var letterMayusq = false
+        var letterMinusq = false;
+        var numbers = false;
+        var letterMayusq = false;
 
         if (localityValue.length > 3){
             for (i=0; i < localityValue.length; i++){
@@ -183,7 +199,7 @@ window.onload = function() {
         }else if (localityValue.length == ""){
             errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Please complete the field</p>"
         }else{
-            errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Please more of characters</p>"
+            errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Please more characters</p>"
         }
     }
     locality.onfocus = function (){
