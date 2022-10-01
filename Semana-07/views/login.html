@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../javascript/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src="../assets/logo.png" alt="logo.png">
+        <div class="container">
+            <nav>
+                <div class="nav-container">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <a href="index.html"><p>Home</p></a>
+                </div>
+                <div class="nav-container">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="employee-signup.html"><p>Sign up</p></a>
+                </div>
+            </nav>
+        </div>
+    </aside>
+    <div class="father">
+        <header id="header-login">
+            <div id="header-login-container">
+                <h1>Login</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container-login">
+                <form class="my-form-login">
+                    <div class="input-container">
+                        <label>E-mail</label>
+                        <input id="email" type="text" placeholder="Your e-mail here">
+                        <div id="error-email"></div>
+                        <label>Password</label>
+                        <input id="password" type="password" placeholder="Your password here">
+                        <div id="password-error"></div>
+                    </div>
+                    <div class="button-login-container">
+                        <button id="login" type="submit" class="button-login">Login</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

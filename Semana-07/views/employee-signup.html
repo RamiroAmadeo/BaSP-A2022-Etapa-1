@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/employee-sign-up.js"></script>
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>employee-sign up</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src="../assets/logo.png" alt="logo.png">
+        <div class="container">
+            <nav>
+                <div class="nav-container">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <a href="index.html"><p>Home</p></a>
+                </div>
+                <div class="nav-container">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="login.html"><p>Login</p></a>
+                </div>
+            </nav>
+        </div>
+    </aside>
+    <div class="father">
+        <header id="header-login">
+            <div id="header-login-container">
+                <h1>Sign up</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container-sign-up">
+                <form class="my-form-sign-up">
+                    <div class="input-container-employee">
+                        <label>Name</label>
+                        <input id="input-name" type="text" placeholder="">
+                        <div id="message"></div>
+                        <label>Last name</label>
+                        <input id="last-name" type="text" placeholder="">
+                        <div id="message-error-last-name"></div>
+                        <label>D.N.I</label>
+                        <input id="dni" type="text" placeholder="">
+                        <div id="error-dni"></div>
+                        <label>Date of birth</label>
+                        <input id="date" type="date" placeholder="">
+                        <label>Phone</label>
+                        <input id="phone" type="number" placeholder="">
+                        <div id="phone-error"></div>
+                        <label>Adress</label>
+                        <input id="adress" type="text" placeholder="">
+                        <div id="adress-error"></div>
+                        <label>Locality</label>
+                        <input id="locality" type="text" placeholder="">
+                        <div id="error-locality"></div>
+                        <label>Postal code</label>
+                        <input id="postal-code" type="text" placeholder="">
+                        <div id="postal-code-error"></div>
+                        <label>E-mail</label>
+                        <input id="email" type="text" placeholder="">
+                        <div id="error-email"></div>
+                        <label>Password</label>
+                        <input id="password" type="password" placeholder="Your password here">
+                        <div id="password-error"></div>
+                        <label>Repeat password</label>
+                        <input id="password-repeat" type="password" placeholder="">
+                        <div id="repeat-password-error"></div>
+                    </div>
+                    <div>
+                        <button id="create" type="submit" class="button-sign-up">Create</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

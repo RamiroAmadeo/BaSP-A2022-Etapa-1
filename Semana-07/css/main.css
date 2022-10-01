@@ -1,0 +1,324 @@
+.we-are-text{
+    margin: 5px;
+    text-align: center;
+    color: #373867;
+    font-size: 15px;
+    line-height: 20px;
+}
+.we-are-down-text{
+    margin: 5px;
+    padding-top: 10px;
+    text-align: center;
+    color: #49a37b;
+    font-size: 13px;
+    line-height: 20px;
+}
+/* WHY CHOOSE US */
+.choose-us-right{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.choose-us-right h4{
+    width: 100%;
+    margin-top: 02%;
+    text-align: center;
+    border-bottom: 2px solid #286276;
+}
+.choose-us-right p{
+    width: 100%;
+    text-align: center;
+}
+.choose-us-right h4, .funcionalities h4, .choose-us-left h4{
+    font-size: 18px;
+}
+.choose-us-left p, .choose-us-right p, .funcionalities p{
+    font-size: 15px;
+}
+.choose-us-img{
+    width: 60%;
+    height: auto;
+}
+.choose-us-left{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #d9d9d9;
+}
+.choose-us-left h4{
+    margin-top: 02%;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+.choose-us-left p{
+    width: 100%;
+    text-align: center;
+}
+/* FUNCIONALITIES */
+.funcionalities{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.funcionalities h4{
+    margin-bottom: 02%;
+}
+.funcionalities p{
+    width: 100%;
+}
+
+.funcionalities img{
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+/*LISTS*/
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    color: #373867;
+    background-image: url(../assets/list-picture.png);
+}
+.lists a{
+    color: #373867;
+}
+.lists ol{
+    font-size: 13px;
+    padding: 15px
+}
+.lists a:hover{
+    color: #f13312;
+}
+/*FORM*/
+form h2{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 10px #d9d9d9 solid;
+}
+.my-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-form input[type="text"]{
+    width: 340px;
+    height: 30px;
+    border-color: #373867;
+    border-radius: 5px;
+}
+.my-form textarea{
+    width: 340px;
+    height: 50px;
+    border-color: #373867;
+    border-radius: 5px;
+}
+.my-form label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #373867;
+}
+.my-form select{
+    width: 340px;
+    height: 34px;
+    border-color: #373867;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 02%;
+}
+.button-send, .button-reset{
+    border: none;
+    border-radius: 3px;
+    color: #373867;
+    font-weight: bold;
+}
+.button-send{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    background-color: #aac39b;
+}
+.button-reset{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #f13312;
+}
+@media screen and (min-width: 480px){
+    .we-are-text{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .we-are-down-text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /*WHY CHOOSE US*/
+    .choose-us-right{
+        flex-direction: row-reverse;
+        padding-left: 5px;
+    }
+    .choose-us-right h4{
+        text-align: left;
+        border-bottom: 4px solid #286276;
+    }
+    .choose-us-right p{
+        width: 90%;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .choose-us-img{
+        margin-top: 05%;
+        margin-bottom: 05%;
+        margin-right: 02%;
+    }
+    .choose-us-right h4, .funcionalities h4, .choose-us-left h4{
+        font-size: 25px;
+    }
+    .choose-us-left p, .choose-us-right p, .funcionalities p{
+        font-size: 20px;
+    }
+    .choose-us-left{
+        flex-direction: row;
+    }
+    .choose-us-left h4{
+        text-align: left;
+        border-bottom: 4px solid #ffffff
+    }
+    .choose-us-left p{
+        width: 90%;
+        margin-top: 20px;
+        margin-right: 5px;
+        text-align: left;
+    }
+    /*FUNCIONALITIES*/
+    .funcionalities{
+        width: 46%;
+    }
+    .funcionalities-h-p{
+        margin-left: 10px;
+        width: 70%;
+    }
+    .funcionalities-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .funcionalities img{
+        width: 100%;
+        height: auto;
+    }
+    /*LISTS*/
+    .lists h4{
+        font-size: 18px;
+    }
+    /*FORM*/
+    .my-form{
+        display: flex;
+        margin-left: 05%;
+        margin-right: 05%;
+    }
+    .my-form div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .my-form div div{
+        display: block;
+    }
+    .my-form label{
+        text-align: left;
+    }
+    .form-b{
+        order: 2;
+    }
+    .form-c{
+        order: 1;
+    }
+    .message{
+        width: 100%;
+    }
+    .my-form select{
+        align-self: flex-start;
+    }
+    .my-form textarea{
+        width: 100%;
+        height: 80px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .button-send{
+        margin-left: 05%;
+    }
+    .button-reset{
+        margin-right: 05%;
+    }
+}
+@media screen and (min-width: 1024px){
+    main{
+        margin-left: 150px;
+    }
+    .we-are-text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .we-are-down-text{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    /*WHY CHOOSE US*/
+    .choose-us-right h4, .choose-us-left h4 {
+        font-size: 30px;
+    }
+    .choose-us-left p, .choose-us-right p{
+        font-size: 25px;
+    }
+    .text-right{
+        margin-bottom: 60px;
+        padding-left: 20px;
+    }
+    .text-left{
+        margin-bottom: 60px;
+    }
+    /*LISTS*/
+    .lists h4{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1293px) and (max-width: 1920px){
+    .my-form input[type="text"]{
+        width: 400px;
+    }
+    .my-form select{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1493px) and (max-width: 1920px){
+    .my-form input[type="text"]{
+        width: 600px;
+    }
+    .my-form select{
+        width: 600px;
+    }
+}
