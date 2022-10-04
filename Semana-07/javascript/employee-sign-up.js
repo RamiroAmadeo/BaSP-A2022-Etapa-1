@@ -129,7 +129,10 @@ window.onload = function() {
         dateInfo = e.target.value;
 
     }
-
+    function convertDateFormat(string) {
+        var info = string.split('-').reverse().join('/');
+        return info;
+    }
 
     //PHONE
 
@@ -318,34 +321,24 @@ window.onload = function() {
 
     //REPEAT PASSWORD
 
-    repeatPassword.onfocus = function(e) {
-        repeatPassword.removeAttribute("placeholder")
-        if(document.getElementById("repeat-password-error-id")){
-            repeatPasswordError.removeChild(document.getElementById("repeat-password-error-id"))
+    repeatPassword.onblur = function(e){
+       var repeatPasswordValue = e.target.value;
+        if (passwordInfo != repeatPasswordValue){
+            repeatPasswordError.innerHTML = "<p id='repeat-password-error-msg' class='error'>Passwords are not the same</p>"
+        }else{
+            repeatPassword.classList.add("green-background-input")
         }
     }
 
-    repeatPassword.onblur = function(e){
-        var invalid = false;
-        var repeatPasswordValue = e.target.value.trim();
-        if(repeatPasswordValue == ""){
-            repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Please enter your password</p>"
-        }else{
-            for(var i = 0; i < repeatPasswordValue.length; i++){
-            if((((repeatPasswordValue.charCodeAt(i) >= 97) && (repeatPasswordValue.charCodeAt(i) <= 122))==false)&&(((repeatPasswordValue.charCodeAt(i) >= 48)
-            &&((repeatPasswordValue.charCodeAt(i) <= 57)))==false)&&((((repeatPasswordValue.charCodeAt(i) >= 65)&&(repeatPasswordValue.charCodeAt(i) <= 90)))==false)
-            ||(repeatPasswordValue.charCodeAt(i)==32)){
-                invalid = true
-                }
-            }
-            if (invalid || repeatPasswordValue.length<8){
-                repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
-            }else{
-                repeatPassword.classList.add("green-background-input")
-                passwordRepeatInfo = e.target.value;
-            }
+    repeatPassword.onfocus = function(e) {
+        if(document.getElementById("repeat-password-error-msg")){
+            repeatPasswordError.removeChild(document.getElementById("repeat-password-error-msg"))
         }
+        repeatPassword.classList.remove("green-background-input");
     }
+
+    //BUTTON
+
     button.onclick = function (e){
         e.preventDefault();
 
@@ -369,3 +362,32 @@ window.onload = function() {
         +" "+ emailInfo+" "+ passwordInfo+" "+ passwordRepeatInfo);
     }
 }
+
+/* repeatPassword.onfocus = function(e) {
+    repeatPassword.removeAttribute("placeholder")
+    if(document.getElementById("repeat-password-error-id")){
+        repeatPasswordError.removeChild(document.getElementById("repeat-password-error-id"))
+    }
+}
+
+repeatPassword.onblur = function(e){
+    var invalid = false;
+    var repeatPasswordValue = e.target.value.trim();
+    if(repeatPasswordValue == ""){
+        repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Please enter your password</p>"
+    }else{
+        for(var i = 0; i < repeatPasswordValue.length; i++){
+        if((((repeatPasswordValue.charCodeAt(i) >= 97) && (repeatPasswordValue.charCodeAt(i) <= 122))==false)&&(((repeatPasswordValue.charCodeAt(i) >= 48)
+        &&((repeatPasswordValue.charCodeAt(i) <= 57)))==false)&&((((repeatPasswordValue.charCodeAt(i) >= 65)&&(repeatPasswordValue.charCodeAt(i) <= 90)))==false)
+        ||(repeatPasswordValue.charCodeAt(i)==32)){
+            invalid = true
+            }
+        }
+        if (invalid || repeatPasswordValue.length<8){
+            repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
+        }else{
+            repeatPassword.classList.add("green-background-input")
+            passwordRepeatInfo = e.target.value;
+        }
+    }
+} */
