@@ -32,7 +32,7 @@ window.onload = function() {
     var phoneInfo = "";
     var adressInfo = "";
     var localityInfo = "";
-    var postalCodeInfo = "";
+    var postalCodeInfo = ""
     var emailInfo = "";
     var passwordInfo = "";
     var passwordRepeatInfo = "";
@@ -126,6 +126,7 @@ window.onload = function() {
     //DATE OF BIRTH
     date.onblur = function (e){
         console.log(e.target.value)
+        dateInfo = e.target.value;
 
     }
 
@@ -347,6 +348,23 @@ window.onload = function() {
     }
     button.onclick = function (e){
         e.preventDefault();
+
+        var api = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+
+        var urlComplete = api +'?name='+nameInfo+'&lastName='+ lastNameInfo+'&dni='+dniInfo+'&dob='+ dateInfo + '&phone='+ phoneInfo
+        + '&address='+ adressInfo +'&city='+ localityInfo + '&zip='+ postalCodeInfo+ '&email='+ emailInfo +'&password='+ passwordInfo;
+
+        fetch(urlComplete)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            alert(data.msg);
+        })
+        .catch(function(error){
+            alert(error);
+        })
+
         alert (nameInfo +" "+ lastNameInfo+" "+ dniInfo+" "+ adressInfo+" "+ localityInfo+" "+ postalCodeInfo
         +" "+ emailInfo+" "+ passwordInfo+" "+ passwordRepeatInfo);
     }

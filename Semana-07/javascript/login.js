@@ -19,7 +19,6 @@ window.onload = function () {
     }
 
     email.onblur = function (e) {
-        console.log(e);
         if(e.target.value == ""){
             errorEmail.innerHTML = "<p id = 'email-error-id' class = 'error'> Please enter your e-mail</p>"
         }
@@ -39,8 +38,8 @@ window.onload = function () {
             errorPassword.removeChild(document.getElementById("password-error-id"))
         }
     }
+    var invalid = false;
     password.onblur = function(e){
-        var invalid = false;
         var passwordValue = e.target.value.trim();
         if(passwordValue == ""){
             errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Please enter your password </p>"
@@ -57,38 +56,70 @@ window.onload = function () {
             }else{
                 password.classList.add("green-background-input")
                 passwordInfo = e.target.value;
-                //console.log(passwordInfo);
             }
         }
     }
     login.onclick = function (e){
         e.preventDefault();
 
-        if(emailInfo&&passwordInfo){
-            alert (emailInfo +" "+ passwordInfo);
+        var api = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+        var urlComplete = api+'?email='+emailInfo+'&password='+passwordInfo;
 
-            var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
-            var eMail = '?email=rose@radiumrocket.com';
-            var pass = '&password=BaSP2022';
-            
-            
-            fetch (url)
+        if (emailInfo == "" && passwordInfo == ""){
+            alert("error")
+        }else if (!emailExpression.test(emailInfo)){
+            alert("Invalid email")
+        }else if (invalid || passwordInfo.length<8){
+            alert("invalid password")
+        }else{
+            fetch(urlComplete)
             .then(function(response){
                 return response.json();
             })
             .then(function(data){
-                console.log(data.msg)
+                alert(data.msg);
             })
             .catch(function(error){
-                console.log(error)
+                alert(error);
             })
-
-        }else{
-            console.log("error")
+            alert (emailInfo +" "+ passwordInfo);
         }
     }
 
 
 
+    /* if (emailInfo && passwordInfo){
+        fetch =('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + emailInfo + '?password='+ passwordInfo)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+           alert(data.msg)
+        })
+        .catch(function(error){
+           alert(error)
+        })
+    } */
+
+
+    /* var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+    var eMail = 'rose@radiumrocket.com';
+    var pass = 'BaSP2022';
+
+    var urlTotal = url+'?email='+ eMail + '&password='+ pass;
+    console.log(urlTotal)
+    fetch (urlTotal)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+       alert(data.msg)
+    })
+    .catch(function(error){
+       alert(error)
+    }) */
+
 
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
