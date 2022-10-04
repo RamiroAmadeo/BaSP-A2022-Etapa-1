@@ -125,13 +125,12 @@ window.onload = function() {
 
     //DATE OF BIRTH
     date.onblur = function (e){
-        console.log(e.target.value)
         dateInfo = e.target.value;
-
-    }
-    function convertDateFormat(string) {
-        var info = string.split('-').reverse().join('/');
-        return info;
+        var date = dateInfo.split('-');
+        var year = date.shift();
+            date.push(year);
+            dateInfo = date.join('/');
+            console.log(dateInfo)
     }
 
     //PHONE
@@ -221,10 +220,10 @@ window.onload = function() {
                     letterMayusq = true;
                 }
             }
-            if(letterMinusq==false || numbers==false || letterMayusq==false){
-                errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Error</p>"
+            if(letterMinusq==false || letterMayusq==false && numbers==false){
+                errorLocality.innerHTML = "<p id= 'locality-error-message' class= 'error'>Error: needs text or numbers</p>"
             }
-            if (letterMinusq==true && numbers==true && letterMayusq==true){
+            if (letterMinusq==true  && letterMayusq==true || numbers==true){
                 locality.classList.add("green-background-input")
                 localityInfo = e.target.value;
             }
@@ -342,6 +341,8 @@ window.onload = function() {
     button.onclick = function (e){
         e.preventDefault();
 
+        var arrayError = [];
+
         var api = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
 
         var urlComplete = api +'?name='+nameInfo+'&lastName='+ lastNameInfo+'&dni='+dniInfo+'&dob='+ dateInfo + '&phone='+ phoneInfo
@@ -352,7 +353,26 @@ window.onload = function() {
             return response.json();
         })
         .then(function(data){
-            alert(data.msg);
+            if (data.success){
+                localStorage.setItem('name', nameInfo);
+                localStorage.setItem('lastName', lastNameInfo);
+                localStorage.setItem('dni', dniInfo);
+                localStorage.setItem('dob', dateInfo);
+                localStorage.setItem('phone', phoneInfo);
+                localStorage.setItem('address', adressInfo);
+                localStorage.setItem('city', localityInfo);
+                localStorage.setItem('zip', postalCodeInfo);
+                localStorage.setItem('email', emailInfo);
+                localStorage.setItem('password', passwordInfo);
+
+            }else if(data.errors){
+                for(var i=0; i < data.errors.length ; i++) {
+                    arrayError[i] = data.errors[i].msg + '\n'
+                }
+                throw new Error(arrayError);
+            }else{
+                alert(data.msg);
+            }
         })
         .catch(function(error){
             alert(error);
@@ -362,32 +382,3 @@ window.onload = function() {
         +" "+ emailInfo+" "+ passwordInfo+" "+ passwordRepeatInfo);
     }
 }
-
-/* repeatPassword.onfocus = function(e) {
-    repeatPassword.removeAttribute("placeholder")
-    if(document.getElementById("repeat-password-error-id")){
-        repeatPasswordError.removeChild(document.getElementById("repeat-password-error-id"))
-    }
-}
-
-repeatPassword.onblur = function(e){
-    var invalid = false;
-    var repeatPasswordValue = e.target.value.trim();
-    if(repeatPasswordValue == ""){
-        repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Please enter your password</p>"
-    }else{
-        for(var i = 0; i < repeatPasswordValue.length; i++){
-        if((((repeatPasswordValue.charCodeAt(i) >= 97) && (repeatPasswordValue.charCodeAt(i) <= 122))==false)&&(((repeatPasswordValue.charCodeAt(i) >= 48)
-        &&((repeatPasswordValue.charCodeAt(i) <= 57)))==false)&&((((repeatPasswordValue.charCodeAt(i) >= 65)&&(repeatPasswordValue.charCodeAt(i) <= 90)))==false)
-        ||(repeatPasswordValue.charCodeAt(i)==32)){
-            invalid = true
-            }
-        }
-        if (invalid || repeatPasswordValue.length<8){
-            repeatPasswordError.innerHTML = "<p id = 'repeat-password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
-        }else{
-            repeatPassword.classList.add("green-background-input")
-            passwordRepeatInfo = e.target.value;
-        }
-    }
-} */
