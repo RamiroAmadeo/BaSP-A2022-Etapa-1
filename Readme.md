@@ -30,6 +30,8 @@ The company GigaTech Software Solutions SA provides software development service
 ### Week 06
 > In this week we have a change of group. At the beggining was difficult to comunicate with oters but with the pass of the days it was more and more easy. On the other hand we learned how to validate fields and we reinforce what we have learned.
 
+### Week 07
+> This week we continued learning about javascript also about API and how it works. Apart from that we learnt how to save information in a localstorage.
 # Github Pages
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
 ## https://ramiroamadeo.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
