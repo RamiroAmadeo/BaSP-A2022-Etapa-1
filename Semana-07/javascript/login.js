@@ -70,7 +70,7 @@ window.onload = function () {
         }else if (!emailExpression.test(emailInfo)){
             alert("Invalid email")
         }else if (invalid || passwordInfo.length<8){
-            alert("invalid password")
+            errorPassword.innerHTML = "<p id = 'password-error-id' class = 'error'> Password must have at least 8 characters of letters and numbers without any spaces between</p>"
         }else{
             fetch(urlComplete)
             .then(function(response){

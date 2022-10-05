@@ -37,6 +37,7 @@ window.onload = function() {
     var passwordInfo = "";
     var passwordRepeatInfo = "";
     var dateInfo = "";
+    var dateCopy ="";
 
 
     function threeLetters (nameValue, input, errorDiv, condition){
@@ -128,11 +129,12 @@ window.onload = function() {
         dateInfo = e.target.value;
         var date = dateInfo.split('-');
         var year = date.shift();
-            date.push(year);
-            dateInfo = date.join('/');
-            console.log(dateInfo)
+        date.push(year);
+        dateInfo = date.join('/');
+        console.log(dateInfo)
+        dateCopy = dateInfo;
     }
-
+   
     //PHONE
 
     phone.onblur = function (e){
@@ -380,5 +382,26 @@ window.onload = function() {
 
         alert (nameInfo +" "+ lastNameInfo+" "+ dniInfo+" "+ adressInfo+" "+ localityInfo+" "+ postalCodeInfo
         +" "+ emailInfo+" "+ passwordInfo+" "+ passwordRepeatInfo);
+    }
+    if (localStorage.getItem('name')) {
+        name.value = localStorage.getItem('name');
+        lastName.value = localStorage.getItem('lastName');
+        dni.value = localStorage.getItem('dni');
+        date.value =convertDate(localStorage.getItem('dob'));
+        phone.value = localStorage.getItem('phone');
+        adress.value = localStorage.getItem('address');
+        locality.value = localStorage.getItem('city');
+        postalCode.value = localStorage.getItem('zip');
+        email.value = localStorage.getItem('email');
+        password.value = localStorage.getItem('password');
+        repeatPassword.value = localStorage.getItem('password');
+    }
+
+
+    function convertDate(date){
+        [month, day, year] = date.split('/');
+        var dateFormat = [year, month, day].join('-')
+
+        return dateFormat
     }
 }

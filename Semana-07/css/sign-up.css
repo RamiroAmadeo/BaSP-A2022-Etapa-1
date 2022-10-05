@@ -22,9 +22,13 @@
     border-color: #373867;
     border-radius: 5px;
 }
-.inputs-left, .inputs-right{
+.box-container{
     display: flex;
-    flex-basis: 30%;
+    flex-direction: column;
+    width: 50%;
+}
+.input-left{
+    display: flex;
 }
 .input-container-employee{
     width: 50%;
@@ -60,7 +64,3 @@
     font-weight: bold;
     background-color: #aac39b;
 }
-/* .column{
-    display: flex;
-    flex-direction: row;
-} */
