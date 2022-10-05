@@ -1,4 +1,4 @@
-#date{
+/* #date{
     width: 100%;
     height: 30px;
     border-color: #373867;
@@ -25,10 +25,11 @@
 .box-container{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
-.input-left{
+.input-left, .input-right{
     display: flex;
+    flex-direction: row;
 }
 .input-container-employee{
     width: 50%;
@@ -54,8 +55,45 @@
     font-weight: bold;
     color: #373867;
 }
+ */
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: content;
+    justify-content: center;
+}
+.inputs-employee{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.inputs-employee div {
+    width: 90%;
+}
+.box-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+input[type=text], input[type=password], select, input[type=date] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+
+}
+label, select {
+    color: #373867;
+    font-size: 14px;
+    font-weight: bold;
+}
 .button-sign-up{
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 140px;
     height: 30px;
     border: none;
@@ -63,4 +101,20 @@
     color: #373867;
     font-weight: bold;
     background-color: #aac39b;
+}
+@media only screen and (min-width:480px) {
+    .inputs-employee {
+        justify-content: space-between;
+    }
+    .inputs-employee div {
+        width: 48%
+    }
+    select, input[type=text], input[type=password] {
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1023px){
+    .inputs-employee{
+        margin-left: 150px;
+    }
 }
